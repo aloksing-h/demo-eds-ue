@@ -22,7 +22,7 @@
   {
     "id": "hero-banner",
     "components": [
-      "hero-banner"
+      "hero-banner-item"
     ]
   },
   {
