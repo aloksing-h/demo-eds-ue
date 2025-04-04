@@ -18,7 +18,8 @@
       "fragment",
       "hero-banner",
       "sipindex",
-      "topheading"
+      "topheading",
+       "header-sec"
     ]
   },
   {
@@ -58,6 +59,12 @@
     "id": "topheading",
     "components": [
       "heading"
+    ]
+  },
+  {
+    "id": "header-sec",
+    "components": [
+      "header-sec-item"
     ]
   }
 ]

@@ -302,5 +302,39 @@
         "label": "Text"
       }
     ]
+  },
+  {
+    "id": "header-sec-item",
+    "fields": [
+      {
+        "component": "reference",
+        "name": "col1_image",
+        "label": "Logo",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "name": "col1_imageAlt",
+        "label": "Alt Text"
+      },
+      {
+        "component": "richtext",
+        "name": "col2_text",
+        "label": "Text",
+        "valueType": "string"
+      },
+      {
+        "component": "richtext",
+        "name": "col2_texter",
+        "label": "Text",
+        "valueType": "string"
+      },
+      {
+        "component": "richtext",
+        "name": "col3_text",
+        "label": "Text",
+        "valueType": "string"
+      }
+    ]
   }
 ]
