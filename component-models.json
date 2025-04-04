@@ -214,5 +214,20 @@
         "valueType": "string"
       }
     ]
+  },
+  {
+    "id": "hero-banner",
+    "fields": [
+      {
+        "component": "multiselect",
+        "name": "classes",
+        "label": "Multi Select",
+        "valueType": "string",
+        "options": [
+          { "name": "Primary", "value": "primary" },
+          { "name": "Secondary", "value": "secondary" }
+        ]
+      }
+    ]
   }
 ]
