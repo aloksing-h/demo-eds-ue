@@ -265,5 +265,16 @@
         "label": "Link Text"
       }
     ]
+  },
+  {
+    "id": "sipindex",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "sipindex",
+        "label": "sip index"
+      }
+    ]
   }
 ]
