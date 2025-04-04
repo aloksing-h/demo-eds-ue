@@ -17,7 +17,8 @@
       "columns",
       "fragment",
       "hero-banner",
-      "sipindex"
+      "sipindex",
+      "topheading"
     ]
   },
   {
@@ -51,6 +52,12 @@
     "id": "sip-index",
     "components": [
       "sip-index"
+    ]
+  },
+  {
+    "id": "topheading",
+    "components": [
+      "heading"
     ]
   }
 ]
