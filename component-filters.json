@@ -21,6 +21,12 @@
     ]
   },
   {
+    "id": "sip-index",
+    "components": [
+      "sip-index"
+    ]
+  },
+  {
     "id": "hero-banner",
     "components": [
       "hero-banner-item"
