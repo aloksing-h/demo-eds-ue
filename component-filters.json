@@ -66,5 +66,11 @@
     "components": [
       "header-sec-item"
     ]
+  },
+  {
+    "id": "swiper-sec",
+    "components": [
+      "swiper-sec-item"
+    ]
   }
 ]
