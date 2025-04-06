@@ -1,4 +1,9 @@
 @import url("./swiper-bundle.min.css");
+main > .section.swiper-sec-container {
+  margin: 0;
+  padding: 0;
+}
+
 main > .section.swiper-sec-container > div {
   max-width: 100%;
   margin: 0;
