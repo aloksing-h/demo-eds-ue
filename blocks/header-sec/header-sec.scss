@@ -1,4 +1,76 @@
-main > .section.header-sec-container {
+main>.section.header-sec-container {
     margin: 0;
     padding: 0;
+
+    .header-sec-wrapper {
+        padding: 0;
+
+        @media (min-width: 992px) {
+            & {
+                max-width: 960px;
+                width: 100%;
+                margin: 0 auto;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            & {
+                padding: 0;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            & {
+                max-width: 1172px;
+                width: 100%;
+                margin: 0 auto;
+                padding: 0;
+            }
+        }
+
+        @media (min-width: 1680px) {
+            & {
+                max-width: 1486px;
+                width: 100%;
+                margin: 0 auto;
+                padding: 0;
+            }
+        }
+
+        .header-sec>div {
+            display: flex;
+            width: 100%;
+        }
+    }
 }
+
+
+// @media (min-width: 1200px) {
+//     .headerRevamp .container {
+//         max-width: 1172px;
+//         padding: 0
+//     }
+// }
+
+// @media (min-width: 992px) {
+
+//     .container,
+//     .container-lg,
+//     .container-md,
+//     .container-sm {
+//         max-width: 960px
+//     }
+// }
+
+// @media (min-width: 1024px) {
+//     .headerRevamp .container {
+//         padding: 0
+//     }
+// }
+
+// @media (min-width: 1680px) {
+//     .headerRevamp .container {
+//         max-width: 1486px;
+//         padding: 0
+//     }
+// }

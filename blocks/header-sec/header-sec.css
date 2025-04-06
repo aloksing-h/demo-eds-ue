@@ -1,4 +1,39 @@
 main > .section.header-sec-container {
   margin: 0;
   padding: 0;
+}
+main > .section.header-sec-container .header-sec-wrapper {
+  padding: 0;
+}
+@media (min-width: 992px) {
+  main > .section.header-sec-container .header-sec-wrapper {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1024px) {
+  main > .section.header-sec-container .header-sec-wrapper {
+    padding: 0;
+  }
+}
+@media (min-width: 1200px) {
+  main > .section.header-sec-container .header-sec-wrapper {
+    max-width: 1172px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+@media (min-width: 1680px) {
+  main > .section.header-sec-container .header-sec-wrapper {
+    max-width: 1486px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+main > .section.header-sec-container .header-sec-wrapper .header-sec > div {
+  display: flex;
+  width: 100%;
 }/*# sourceMappingURL=header-sec.css.map */
