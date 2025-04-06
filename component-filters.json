@@ -1,9 +1,7 @@
 [
   {
     "id": "main",
-    "components": [
-      "section"
-    ]
+    "components": ["section"]
   },
   {
     "id": "section",
@@ -19,59 +17,40 @@
       "hero-banner",
       "sipindex",
       "topheading",
-       "header-sec",
-       "swiper-sec"
+      "header-sec",
+      "swiper-sec"
     ]
   },
   {
     "id": "hero-banner",
-    "components": [
-      "hero-banner-item"
-    ]
+    "components": ["hero-banner-item"]
   },
   {
     "id": "cards",
-    "components": [
-      "card"
-    ]
+    "components": ["card"]
   },
   {
     "id": "columns",
-    "components": [
-      "column"
-    ]
+    "components": ["column"]
   },
   {
     "id": "column",
-    "components": [
-      "text",
-      "image",
-      "button",
-      "title"
-    ]
+    "components": ["text", "image", "button", "title"]
   },
   {
     "id": "sip-index",
-    "components": [
-      "sip-index"
-    ]
+    "components": ["sip-index"]
   },
   {
     "id": "topheading",
-    "components": [
-      "heading"
-    ]
+    "components": ["heading"]
   },
   {
     "id": "header-sec",
-    "components": [
-      "header-sec-item"
-    ]
+    "components": ["header-sec-item"]
   },
   {
     "id": "swiper-sec",
-    "components": [
-      "swiper-sec-item"
-    ]
+    "components": ["swiper-sec-item"]
   }
 ]
