@@ -1,4 +1,4 @@
-.cards > ul {
+.cards>ul {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -7,7 +7,7 @@
   grid-gap: 24px;
 }
 
-.cards > ul > li {
+.cards>ul>li {
   border: 1px solid #dadada;
   background-color: var(--background-color);
 }
@@ -20,8 +20,84 @@
   line-height: 0;
 }
 
-.cards > ul > li img {
+.cards>ul>li img {
   width: 100%;
   aspect-ratio: 4 / 3;
   object-fit: cover;
 }
+
+/* card-section-css-start */
+main>.section.cards-container {
+  margin-top: 100px;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.cards-container .default-content-wrapper {
+  width: 100%;
+  text-align: center;
+}
+
+.cards-container .default-content-wrapper p {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #2b2e8c;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: -.01em;
+  margin: 0;
+  padding: 0;
+}
+
+
+.cards-container .cards-wrapper {
+  padding: 0;
+  margin-top: 3rem;
+}
+
+.cards-container .cards {
+  display: flex;
+  justify-content: center;
+}
+
+.cards-container .cards ul {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 0;
+  row-gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.cards-container .cards ul li {
+  width: 20%;
+  border: none;
+}
+
+.cards-container .cards ul li >div:first-child {
+  display: none;
+}
+
+.cards-container .cards .cards-card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cards-container .cards .cards-card-body p {
+  margin: 0;
+  padding: 0;
+}
+
+.cards-container .cards .cards-card-body p .icon {
+  width: 40px;
+  height: 40px;
+}
+
+.cards-container .cards .cards-card-body p .icon img {
+  width: 40px;
+  height: 40px;
+}
+
+/* card-section-css-end */
