@@ -277,6 +277,21 @@
               }
             }
           }
+        },
+        {
+          "title": "cards-section",
+          "id": "cards-section",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block/item",
+                "template": {
+                  "name": "cards section",
+                  "model": "Card-item"
+                }
+              }
+            }
+          }
         }
       ]
     }

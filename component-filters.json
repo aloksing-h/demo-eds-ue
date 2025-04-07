@@ -18,7 +18,8 @@
       "sipindex",
       "topheading",
       "header-sec",
-      "swiper-sec"
+      "swiper-sec",
+      "cards-section"
     ]
   },
   {
@@ -28,6 +29,10 @@
   {
     "id": "cards",
     "components": ["card"]
+  },
+  {
+    "id": "cards-section",
+    "components": ["cards-section"]
   },
   {
     "id": "columns",
