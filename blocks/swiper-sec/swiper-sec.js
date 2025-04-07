@@ -11,11 +11,12 @@ export default function decorate(block) {
     })
     block.appendChild(swiperWrapper);
     block.appendChild(swiperPagination);
-    Swiper1(block , {
-        autoplay : true,
+    Swiper1(block, {
+        autoplay: true,
+        loop: true,
         pagination: {
             el: swiperPagination,
-            clickable : true
+            clickable: true
         },
     });
 }

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 main > .section.header-sec-container {
   margin: 0;
   padding: 0;
@@ -147,6 +148,48 @@ main > .section.header-sec-container .header-sec-wrapper .header-sec-container-c
   font-weight: 500;
   font-family: Work Sans, sans-serif;
   line-height: 20px;
+}
+main > .section.header-sec-container .header-sec-wrapper .header-sec-container-column.column-3 .column-3-section-1 .login-trigger {
+  position: relative;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  /* spacing between text and arrow */
+  font-weight: 500;
+}
+main > .section.header-sec-container .header-sec-wrapper .header-sec-container-column.column-3 .column-3-section-1 .login-trigger::after {
+  content: "▾";
+  font-size: 18px;
+  transition: transform 0.3s ease;
+}
+main > .section.header-sec-container .header-sec-wrapper .header-sec-container-column.column-3 .column-3-section-1 .login-trigger.active::after {
+  transform: rotate(180deg);
+}
+main > .section.header-sec-container .header-sec-wrapper .header-sec-container-column.column-3 .column-3-section-1 .login-trigger .login-dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  min-width: 180px;
+  z-index: 1000;
+}
+main > .section.header-sec-container .header-sec-wrapper .header-sec-container-column.column-3 .column-3-section-1 .login-trigger .login-dropdown a {
+  display: block;
+  padding: 8px 12px;
+  color: #000;
+  text-decoration: none;
+  font-weight: 500;
+}
+main > .section.header-sec-container .header-sec-wrapper .header-sec-container-column.column-3 .column-3-section-1 .login-trigger .login-dropdown a:hover {
+  background: #f5f5f5;
+}
+main > .section.header-sec-container .header-sec-wrapper .header-sec-container-column.column-3 .column-3-section-1 .login-trigger.active .login-dropdown {
+  display: block;
 }
 main > .section.header-sec-container .header-sec-wrapper .header-sec-container-column.column-3 .column-3-section-1 p {
   margin: 0;

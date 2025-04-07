@@ -30,7 +30,7 @@ export default function decorate(block) {
       targetUl.appendChild(selectDiv);
     }
   
-    // ✅ Column-3 section split
+    // Group paragraphs in .column-3 into two sections
     const column3 = block.querySelector(".column-3");
     if (column3) {
       const paragraphs = column3.querySelectorAll("p");
@@ -54,61 +54,32 @@ export default function decorate(block) {
       }
     }
   
-    // ✅ Add dropdown to login link in column-3-section-2
-    const loginSection = block.querySelector(".column-3-section-2");
-    const loginTrigger = loginSection?.querySelector("p");
+    // Add dropdown structure in JS only
+    const loginSection = block.querySelector(".column-3-section-1");
+    const loginTrigger = loginSection?.querySelector("p:nth-child(3)");
   
     if (loginTrigger) {
+      loginTrigger.classList.add("login-trigger");
+  
       const dropdown = document.createElement("div");
       dropdown.classList.add("login-dropdown");
   
       dropdown.innerHTML = `
-        <a href="https://www.motilaloswalmf.com/login/investor">👤 Investor Login</a>
-        <a href="https://www.motilaloswalmf.com/login/partner">📅 Partner Login</a>
+        <a href="https://www.motilaloswalmf.com/login/investor">Investor Login</a>
+        <a href="https://www.motilaloswalmf.com/login/partner">Partner Login</a>
       `;
   
-      loginTrigger.style.position = "relative";
-      loginTrigger.style.cursor = "pointer";
       loginTrigger.appendChild(dropdown);
   
-      // Style dropdown with JS
-      Object.assign(dropdown.style, {
-        display: "none",
-        position: "absolute",
-        top: "100%",
-        right: "0",
-        background: "#fff",
-        boxShadow: "0 4px 12px rgba(0,0,0,0.1)",
-        borderRadius: "8px",
-        padding: "10px",
-        minWidth: "160px",
-        zIndex: "999",
-      });
-  
-      Array.from(dropdown.children).forEach((link) => {
-        Object.assign(link.style, {
-          display: "block",
-          padding: "8px 12px",
-          textDecoration: "none",
-          color: "#000",
-          fontWeight: "500",
-        });
-  
-        link.addEventListener("mouseover", () => link.style.background = "#f0f0f0");
-        link.addEventListener("mouseout", () => link.style.background = "transparent");
-      });
-  
-      // Show/hide dropdown on click
+      // Toggle class for dropdown open
       loginTrigger.addEventListener("click", (e) => {
         e.stopPropagation();
-        dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
+        loginTrigger.classList.toggle("active");
       });
   
-      // Close dropdown on outside click
-      document.addEventListener("click", (e) => {
-        if (!loginTrigger.contains(e.target)) {
-          dropdown.style.display = "none";
-        }
+      // Close on outside click
+      document.addEventListener("click", () => {
+        loginTrigger.classList.remove("active");
       });
     }
   }
