@@ -32,7 +32,7 @@
   },
   {
     "id": "cards-section",
-    "components": ["cards-section"]
+    "components": ["cards-item"]
   },
   {
     "id": "columns",
