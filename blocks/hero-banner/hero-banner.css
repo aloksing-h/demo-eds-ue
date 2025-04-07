@@ -1,4 +1,49 @@
 main > .section.hero-banner-container {
   margin: 0;
   padding: 0;
+}
+main > .section.hero-banner-container .hero-banner-wrapper .hero-banner-ctnr {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.75rem;
+}
+main > .section.hero-banner-container .hero-banner-wrapper .hero-banner-ctnr-col.sec-1 {
+  width: 40%;
+}
+main > .section.hero-banner-container .hero-banner-wrapper .hero-banner-ctnr-col.sec-2 {
+  width: 60%;
+  padding-top: 25px;
+}
+main > .section.hero-banner-container .hero-banner-wrapper .hero-banner-ctnr-col.sec-2 .sec-2-text-1,
+main > .section.hero-banner-container .hero-banner-wrapper .hero-banner-ctnr-col.sec-2 .sec-2-text-2 {
+  font-family: Verdana, Geneva, "roboto-condensed";
+  color: #2b2e8c;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 48px;
+  letter-spacing: -0.01em;
+  margin: 0;
+  padding-top: 8px;
+}
+main > .section.hero-banner-container .hero-banner-wrapper .hero-banner-ctnr-col.sec-2 .sec-2-text-3 {
+  font-family: Work Sans, sans-serif;
+  font-size: 24px;
+  line-height: 38px;
+  color: rgb(109, 121, 142);
+  margin-top: 1.5rem;
+}
+main > .section.hero-banner-container .hero-banner-wrapper .hero-banner-ctnr-col.sec-2 .sec-2-text-4 .button {
+  margin: 0;
+  padding: 0;
+  font-family: Work Sans, serif;
+  font-size: 21px;
+  font-style: normal;
+  line-height: 1.25rem;
+  text-decoration-line: none;
+  font-weight: 500;
+  padding: 4px 49px;
+  background-color: rgb(43, 46, 140);
+  border-radius: 8px;
+  height: auto;
+  margin-top: 7px;
 }/*# sourceMappingURL=hero-banner.css.map */
