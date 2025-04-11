@@ -2,6 +2,12 @@ main > .section.hero-banner-container {
   margin: 0;
   padding: 0;
 }
+main > .section.hero-banner-container .hero-banner-wrapper .hero-banner {
+  background: url(/icons/think-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+}
 main > .section.hero-banner-container .hero-banner-wrapper .hero-banner-ctnr {
   display: flex;
   align-items: flex-start;
@@ -12,7 +18,7 @@ main > .section.hero-banner-container .hero-banner-wrapper .hero-banner-ctnr-col
 }
 main > .section.hero-banner-container .hero-banner-wrapper .hero-banner-ctnr-col.sec-2 {
   width: 60%;
-  padding-top: 25px;
+  padding-top: 45px;
 }
 main > .section.hero-banner-container .hero-banner-wrapper .hero-banner-ctnr-col.sec-2 .sec-2-text-1,
 main > .section.hero-banner-container .hero-banner-wrapper .hero-banner-ctnr-col.sec-2 .sec-2-text-2 {

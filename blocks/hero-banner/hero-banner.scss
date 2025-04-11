@@ -4,6 +4,11 @@ main>.section.hero-banner-container {
 
     .hero-banner-wrapper {
         .hero-banner {
+            background: url(/icons/think-bg.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 50%;
+
             &-ctnr {
                 display: flex;
                 align-items: flex-start;
@@ -15,7 +20,7 @@ main>.section.hero-banner-container {
 
                 &-col.sec-2 {
                     width: 60%;
-                    padding-top: 25px;
+                    padding-top: 45px;
 
                     .sec-2-text-1,
                     .sec-2-text-2 {

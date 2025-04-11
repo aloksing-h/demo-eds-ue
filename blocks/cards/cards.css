@@ -94,6 +94,22 @@ main>.section.cards-container {
   margin: 0;
 }
 
+.cards-container .cards .cards-card-body .card-paragraph-1 {
+  font-family: Work Sans, sans-serif;
+  font-size: 18px;
+  color: rgb(43 46 140);
+  font-weight: 500;
+  line-height: 1.5rem;
+}
+
+.cards-container .cards .cards-card-body .card-paragraph-2 {
+  font-family: Work Sans, sans-serif;
+  color: rgb(109 121 142);
+  font-size: 1rem;
+  line-height: 1.5rem;
+  text-align: center;
+}
+
 .cards-container .cards .cards-card-body p {
   margin: 0;
   padding: 0;

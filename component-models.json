@@ -320,6 +320,12 @@
         "multi": false
       },
       {
+        "component": "aem-content",
+        "valueType": "string",
+        "name": "col1_link",
+        "label": "Link"
+      },
+      {
         "component": "text",
         "name": "col1_imageAlt",
         "label": "Alt Text"
