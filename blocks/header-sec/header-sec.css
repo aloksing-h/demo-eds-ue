@@ -1,4 +1,3 @@
-@charset "UTF-8";
 main > .section.header-sec-container {
   margin: 0;
   padding: 0;
@@ -111,7 +110,7 @@ main > .section.header-sec-container .header-sec-wrapper .header-sec-container-c
   width: 20px;
   height: 20px;
   background-size: cover;
-  background-image: url(/assetdetails.html/content/dam/DemoMosl/whatsapp-icon.svg);
+  background-image: url(/content/dam/DemoMosl/whatsapp-icon.svg);
 }
 main > .section.header-sec-container .header-sec-wrapper .header-sec-container-column.column-3 .column-3-section-1 > p:nth-child(2) {
   display: flex;

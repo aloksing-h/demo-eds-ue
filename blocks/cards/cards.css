@@ -74,8 +74,16 @@ main>.section.cards-container {
   border: none;
 }
 
-.cards-container .cards ul li >div:first-child {
+/* .cards-container .cards ul li >div:first-child {
   display: none;
+} */
+.cards-container .cards ul li .cards-card-image {
+  text-align: center;
+}
+
+.cards-container .cards ul li .cards-card-image img {
+  width: 40px;
+  height: 40px;
 }
 
 .cards-container .cards .cards-card-body {
@@ -83,6 +91,7 @@ main>.section.cards-container {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 0;
 }
 
 .cards-container .cards .cards-card-body p {
