@@ -52,8 +52,10 @@ export default function decorate(block) {
             column3.innerHTML = "";
             column3.append(section1, section2);
 
-            // ✅ After section is added, convert <span> to <div> in section2
+            // ✅ Convert span to div
             const spanSearch = section2.querySelector("span.icon-search");
+            console.log("hello");
+            
             if (spanSearch) {
                 const divSearch = document.createElement("div");
                 divSearch.className = spanSearch.className;
@@ -64,8 +66,23 @@ export default function decorate(block) {
 
                 spanSearch.replaceWith(divSearch);
             }
+
+            // ✅ Add border to <p> on input focus
+            const input = section2.querySelector("input[type='text']");
+            const parentParagraph = input?.closest("p");
+
+            if (input && parentParagraph) {
+                input.addEventListener("focus", () => {
+                    parentParagraph.classList.add("input-focus-border");
+                });
+
+                input.addEventListener("blur", () => {
+                    parentParagraph.classList.remove("input-focus-border");
+                });
+            }
         }
     }
+
 
 
     // Login dropdown

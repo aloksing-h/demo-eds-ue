@@ -279,4 +279,8 @@ main > .section.header-sec-container .header-sec-wrapper .header-sec-container-c
   border-radius: 8px;
   height: 1.75rem;
   margin-top: 7px;
+}
+main > .section.header-sec-container .header-sec-wrapper .header-sec-container-column.column-3 .column-3-section-2 .input-focus-border {
+  border: 1px solid #007bff;
+  border-radius: 4px;
 }/*# sourceMappingURL=header-sec.css.map */
