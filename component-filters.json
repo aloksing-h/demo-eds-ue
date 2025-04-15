@@ -18,7 +18,8 @@
       "sipindex",
       "topheading",
       "header-sec",
-      "swiper-sec"
+      "swiper-sec",
+      "tab-sec"
     ]
   },
   {
@@ -52,5 +53,9 @@
   {
     "id": "swiper-sec",
     "components": ["swiper-sec-item"]
+  },
+  {
+    "id": "tab-sec",
+    "components": ["tab-sec-item"]
   }
 ]
