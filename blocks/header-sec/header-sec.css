@@ -263,6 +263,9 @@ main > .section.header-sec-container .header-sec-wrapper .header-sec-container-c
   outline-offset: 0px;
   outline: unset;
 }
+main > .section.header-sec-container .header-sec-wrapper .header-sec-container-column.column-3 .column-3-section-2 > p:first-child.input-focus-border {
+  border: 2px solid #142c46;
+}
 main > .section.header-sec-container .header-sec-wrapper .header-sec-container-column.column-3 .column-3-section-2 .button-container .button {
   margin: 0;
   padding: 0;
@@ -279,8 +282,4 @@ main > .section.header-sec-container .header-sec-wrapper .header-sec-container-c
   border-radius: 8px;
   height: 1.75rem;
   margin-top: 7px;
-}
-main > .section.header-sec-container .header-sec-wrapper .header-sec-container-column.column-3 .column-3-section-2 .input-focus-border {
-  border: 1px solid #007bff;
-  border-radius: 4px;
 }/*# sourceMappingURL=header-sec.css.map */

@@ -30,7 +30,6 @@ export default function decorate(block) {
         targetUl.appendChild(selectDiv);
     }
 
-    // Group paragraphs in .column-3 into two sections
     const column3 = block.querySelector(".column-3");
     if (column3) {
         const paragraphs = column3.querySelectorAll("p");
@@ -52,10 +51,8 @@ export default function decorate(block) {
             column3.innerHTML = "";
             column3.append(section1, section2);
 
-            // ✅ Convert span to div
+            // ✅ Convert <span> with .icon-search to <div>
             const spanSearch = section2.querySelector("span.icon-search");
-            console.log("hello");
-            
             if (spanSearch) {
                 const divSearch = document.createElement("div");
                 divSearch.className = spanSearch.className;
@@ -67,23 +64,38 @@ export default function decorate(block) {
                 spanSearch.replaceWith(divSearch);
             }
 
-            // ✅ Add border to <p> on input focus
-            const input = section2.querySelector("input[type='text']");
-            const parentParagraph = input?.closest("p");
+            // ✅ Add search input inside .icon-search
+            const searchWrapper = section2.querySelector(".icon-search");
+            if (searchWrapper) {
+                const input = document.createElement("input");
+                input.type = "text";
+                input.placeholder = "Search for fund";
+                input.classList.add("search-input");
 
-            if (input && parentParagraph) {
+                // Remove text node next to icon if exists
+                const textNode = searchWrapper.nextSibling;
+                if (textNode && textNode.nodeType === Node.TEXT_NODE) {
+                    textNode.remove();
+                }
+
+                searchWrapper.appendChild(input);
+            }
+
+            // ✅ Add border to <p> on input focus
+            const input = section2.querySelector("input.search-input");
+            const parentP = input?.closest("p");
+
+            if (input && parentP) {
                 input.addEventListener("focus", () => {
-                    parentParagraph.classList.add("input-focus-border");
+                    parentP.classList.add("input-focus-border");
                 });
 
                 input.addEventListener("blur", () => {
-                    parentParagraph.classList.remove("input-focus-border");
+                    parentP.classList.remove("input-focus-border");
                 });
             }
         }
     }
-
-
 
     // Login dropdown
     const loginSection = block.querySelector(".column-3-section-1");
@@ -112,22 +124,22 @@ export default function decorate(block) {
         });
     }
 
-    // ✅ Add search input inside .icon-search
-    const searchSection = block.querySelector(".column-3-section-2");
-    const searchWrapper = searchSection?.querySelector(".icon-search");
+    // // ✅ Add search input inside .icon-search
+    // const searchSection = block.querySelector(".column-3-section-2");
+    // const searchWrapper = searchSection?.querySelector(".icon-search");
 
-    if (searchWrapper) {
-        const input = document.createElement("input");
-        input.type = "text";
-        input.placeholder = "Search for fund";
-        input.classList.add("search-input");
+    // if (searchWrapper) {
+    //     const input = document.createElement("input");
+    //     input.type = "text";
+    //     input.placeholder = "Search for fund";
+    //     input.classList.add("search-input");
 
-        // Optionally remove the text node next to icon
-        const textNode = searchWrapper.nextSibling;
-        if (textNode && textNode.nodeType === Node.TEXT_NODE) {
-            textNode.remove();
-        }
+    //     // Optionally remove the text node next to icon
+    //     const textNode = searchWrapper.nextSibling;
+    //     if (textNode && textNode.nodeType === Node.TEXT_NODE) {
+    //         textNode.remove();
+    //     }
 
-        searchWrapper.appendChild(input);
-    }
+    //     searchWrapper.appendChild(input);
+    // }
 }
