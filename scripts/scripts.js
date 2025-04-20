@@ -1,3 +1,4 @@
+import loadFragment from '../blocks/fragment/fragment.js';
 import {
   loadHeader,
   loadFooter,
@@ -56,6 +57,17 @@ async function loadFonts() {
   } catch (e) {
     // do nothing
   }
+}
+function autolinkFragements(element) {
+  element.querySelectorAll('a').forEach((origin) => {
+    if (origin && origin.href && origin.href.includes('/fragment/')) {
+      const parent = origin.parentElement;
+      const div = document.createElement("div");
+      div.append(origin);
+      parent.append(div);
+      loadFragment(div);
+    }
+  })
 }
 
 /**
@@ -116,6 +128,7 @@ async function loadEager(doc) {
 async function loadLazy(doc) {
   const main = doc.querySelector('main');
   await loadSections(main);
+  autolinkFragements(doc)
 
   const { hash } = window.location;
   const element = hash ? doc.getElementById(hash.substring(1)) : false;
