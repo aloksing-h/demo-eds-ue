@@ -17,7 +17,8 @@
       "columns",
       "fragment",
       "accordion",
-      "embed"
+      "embed",
+      "swiper-sec"
     ]
   },
   {
@@ -45,6 +46,12 @@
     "id": "accordion",
     "components": [
       "accordionitem"
+    ]
+  },
+  {
+    "id": "swiper-sec",
+    "components": [
+      "swiper-sec-item"
     ]
   }
 ]
