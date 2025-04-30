@@ -1,7 +1,7 @@
 // import { createElement } from '../../scripts/scripts.js';
 // import configObject from './carousel-config.js';
 // import Swiper1 from './swiper-bundle.min.js';
-import Swiper from '../testimonial/swiper-bundle.min.js';
+import Swiper from './swiper-bundle.min.js';
 
 export default function decorate(block) {
   block.classList.add('swiper');

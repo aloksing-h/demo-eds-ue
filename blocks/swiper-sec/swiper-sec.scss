@@ -1,4 +1,4 @@
-@import url('../testimonial/swiper-bundle.min.css');
+@import url('./swiper-bundle.min.css');
 
 main>.section.swiper-sec-container {
   margin: 0;
@@ -74,16 +74,16 @@ main>.section.swiper-sec-container {
       .swiper-wrapper {
         .swiper-slide {
           position: relative;
-          width: 372px !important;
+          // width: 372px !important;
           display: flex;
           height: 100%;
-          padding: 16px;
+          // padding: 16px;
           flex-direction: column;
           align-items: flex-start;
           gap: 18px;
           flex-shrink: 0;
           border-radius: 16px;
-          background: #EBECEF;
+          // background: #EBECEF;
 
           @media (max-width: 768px) {
             width: 253px !important;
