@@ -231,6 +231,96 @@
               }
             }
           }
+        },
+        {
+          "title": "BreadCrums",
+          "id": "breadcrums",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "BreadCrums",
+                  "model": "breadcrums"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Dream Home",
+          "id": "dream-home",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Dream Home",
+                  "model": "dream-home"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Favourite Corner",
+          "id": "favourite-corner",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Favourite Corner",
+                  "model": "favourite-corner"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Find Us",
+          "id": "find-us",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Find Us",
+                  "model": "find-us"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Why Choose Us",
+          "id": "why-choose-us",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Why Choose Us",
+                  "filter": "why-choose-us"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Why Choose Us item",
+          "id": "why-choose-us-item",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block/item",
+                "template": {
+                  "name": "Why Choose Us item",
+                  "model": "why-choose-us-item"
+                }
+              }
+            }
+          }
         }
       ]
     }
