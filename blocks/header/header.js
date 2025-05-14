@@ -133,7 +133,14 @@ export default async function decorate(block) {
   }
 
   const navSections = nav.querySelector('.nav-sections');
-  if (navSections) {
+  const navTools = nav.querySelector('.nav-tools');
+  if (navSections && navTools) {
+    const navContent = document.createElement('div');
+    navContent.classList.add('nav-Content');
+    navSections.parentNode.insertBefore(navContent, navSections);
+    navContent.appendChild(navSections);
+    navContent.appendChild(navTools);
+
     navSections.querySelectorAll(':scope .default-content-wrapper > ul > li').forEach((navSection) => {
       if (navSection.querySelector('ul')) navSection.classList.add('nav-drop');
       navSection.addEventListener('click', () => {
@@ -163,4 +170,10 @@ export default async function decorate(block) {
   navWrapper.className = 'nav-wrapper';
   navWrapper.append(nav);
   block.append(navWrapper);
+  const newSec = nav.querySelector('.nav-sections div');
+  newSec.classList.add('content-wrapper');
+  const underLine = nav.querySelector('.nav-sections div>ul');
+  underLine.classList.add('nav-list');
+  const language = nav.querySelector('.nav-sections .nav-drop>ul');
+  language.classList.add('nav-lang');
 }

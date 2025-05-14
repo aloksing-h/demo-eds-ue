@@ -125,8 +125,8 @@ ol,
 ul,
 pre,
 blockquote {
-  margin-top: 0.8em;
-  margin-bottom: 0.25em;
+ margin: 0;
+ padding: 0;
 }
 
 code,
@@ -140,6 +140,9 @@ pre {
   background-color: var(--light-color);
   overflow-x: auto;
   white-space: pre;
+}
+main{
+  padding-top: 100px;
 }
 
 main > div {
