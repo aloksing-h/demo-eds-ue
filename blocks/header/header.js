@@ -184,6 +184,9 @@ export default async function decorate(block) {
 
     const dropCnt = navTools.querySelector('.menu-list > li > ul');
     if (dropCnt) dropCnt.classList.add('dropdown-content');
+
+    const loginEl = navTools.querySelector('[title="login"]');
+    if (loginEl) loginEl.classList.add('login-btn');
   }
   // Add dropdown open/close behavior
   const dropdownBtn = nav.querySelector(".dropdown-btn");

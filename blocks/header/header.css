@@ -114,7 +114,41 @@ header .nav-Content .nav-tools .menu-wrapper ul {
 header .nav-Content .nav-tools .menu-wrapper ul li ul {
   display: none;
 }
+header .nav-Content .nav-tools .menu-wrapper p {
+  display: flex;
+  align-items: center;
+}
+header .nav-Content .nav-tools .menu-wrapper .button-container {
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 header .nav-Content .nav-tools .menu-wrapper .button-container .button {
   margin: 0;
   padding: 0;
+  background-color: transparent;
+  color: #2b2e8c;
+  max-width: 100%;
+  font-family: var(--body-font-family);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.25;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  border: none;
+  border-radius: unset;
+}
+header .nav-Content .nav-tools .menu-wrapper .button-container .login-btn {
+  background-color: #2b2e8c;
+  color: #fff;
+  border-radius: 20px;
+  padding: 6px 23px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
 }/*# sourceMappingURL=header.css.map */

@@ -394,5 +394,31 @@
         "raw": true
       }
     ]
+  },
+  {
+    "id": "header-sub-block",
+    "fields": [
+      {
+        "component": "multiselect",
+        "name": "classes",
+        "label": "Style",
+        "options": [
+          {
+            "name": "XCL World Academy",
+            "children": [
+              {
+                "name": "Hero Video Banner",
+                "value": "hero-video-banner"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "component": "text",
+        "name": "title",
+        "label": "Title"
+      }
+    ]
   }
 ]
