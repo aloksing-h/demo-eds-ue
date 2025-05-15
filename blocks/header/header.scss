@@ -14,11 +14,11 @@ header {
     nav {
         box-sizing: border-box;
         display: flex;
-        gap: 0 24px;
+        // gap: 0 24px;
         margin: auto;
         max-width: 1248px;
         height: auto;
-        padding: 0 24px;
+        // padding: 0 24px;
         font-family: var(--body-font-family);
 
         .nav-brand {
@@ -66,6 +66,85 @@ header {
                         .nav-lang {
                             display: none;
                         }
+                    }
+                }
+            }
+        }
+
+        .nav-tools {
+            .menu-wrapper {
+                display: flex;
+                justify-content: space-between;
+
+                .menu-list {
+                    padding: 0;
+                    margin: 0;
+                    list-style: none;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+
+                    .dropdown {
+                        position: relative;
+
+                        .dropdown-btn {
+                            padding: 5px 10px;
+                            cursor: pointer;
+                            color: #2b2e8c;
+                            background-color: #f0f0ff;
+                            font-size: 14px;
+                            line-height: 24px;
+                            font-weight: 500;
+                            border: 0 solid #ebecf0;
+                            margin-right: 16px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            border-radius: 8px;
+                            width: 84%;
+                        }
+
+                        .dropdown-content {
+                            display: none;
+                            position: absolute;
+                            background-color: #f0f0ff;
+                            min-width: 250px;
+                            margin-top: 10px;
+                            border-radius: 5px;
+                            padding: 0;
+                            list-style: none;
+                            z-index: 1;
+                        }
+
+                        .dropdown-content li a {
+                            display: block;
+                            padding: 10px 20px;
+                            color: #2b2e8c;
+                            text-decoration: none;
+                            border-radius: 5px;
+                        }
+
+                        .dropdown-content li a:hover {
+                            background-color: #dadae9;
+                        }
+                    }
+                }
+
+                & ul {
+                    display: flex;
+                    list-style: none;
+
+                    li {
+                        ul {
+                            display: none;
+                        }
+                    }
+                }
+
+                .button-container {
+                    .button {
+                        margin: 0;
+                        padding: 0;
                     }
                 }
             }

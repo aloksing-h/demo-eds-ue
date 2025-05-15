@@ -108,39 +108,42 @@ function toggleMenu(nav, navSections, forceExpanded = null) {
  * @param {Element} block The header block element
  */
 export default async function decorate(block) {
-  // load nav as fragment
+  // Load nav as fragment
   const navMeta = getMetadata('nav');
   const navPath = navMeta ? new URL(navMeta, window.location).pathname : '/nav';
   const fragment = await loadFragment(navPath);
 
-  // decorate nav DOM
+  // Clear the block and set up nav
   block.textContent = '';
   const nav = document.createElement('nav');
   nav.id = 'nav';
   while (fragment.firstElementChild) nav.append(fragment.firstElementChild);
 
+  // Add section classes
   const classes = ['brand', 'sections', 'tools'];
   classes.forEach((c, i) => {
     const section = nav.children[i];
     if (section) section.classList.add(`nav-${c}`);
   });
 
+  // Clean up nav-brand buttons
   const navBrand = nav.querySelector('.nav-brand');
-  const brandLink = navBrand.querySelector('.button');
+  const brandLink = navBrand?.querySelector('.button');
   if (brandLink) {
     brandLink.className = '';
     brandLink.closest('.button-container').className = '';
   }
 
+  // Wrap nav-sections and nav-tools
   const navSections = nav.querySelector('.nav-sections');
   const navTools = nav.querySelector('.nav-tools');
   if (navSections && navTools) {
     const navContent = document.createElement('div');
     navContent.classList.add('nav-Content');
     navSections.parentNode.insertBefore(navContent, navSections);
-    navContent.appendChild(navSections);
-    navContent.appendChild(navTools);
+    navContent.append(navSections, navTools);
 
+    // Add dropdown functionality
     navSections.querySelectorAll(':scope .default-content-wrapper > ul > li').forEach((navSection) => {
       if (navSection.querySelector('ul')) navSection.classList.add('nav-drop');
       navSection.addEventListener('click', () => {
@@ -153,7 +156,53 @@ export default async function decorate(block) {
     });
   }
 
-  // hamburger for mobile
+  // Add classes to nav-sections elements
+  if (navSections) {
+    const contentWrapper = navSections.querySelector('div');
+    if (contentWrapper) contentWrapper.classList.add('content-wrapper');
+
+    const navList = navSections.querySelector('div > ul');
+    if (navList) navList.classList.add('nav-list');
+
+    const navLang = navSections.querySelector('.nav-drop > ul');
+    if (navLang) navLang.classList.add('nav-lang');
+  }
+
+  // Add classes to nav-tools elements
+  if (navTools) {
+    const menuWrapper = navTools.querySelector('div');
+    if (menuWrapper) menuWrapper.classList.add('menu-wrapper');
+
+    const menuList = navTools.querySelector('div > ul');
+    if (menuList) menuList.classList.add('menu-list');
+
+    const dropDW = navTools.querySelector('.menu-list > li');
+    if (dropDW) dropDW.classList.add('dropdown');
+
+    const dropBtn = navTools.querySelector('.menu-list > li > p');
+    if (dropBtn) dropBtn.classList.add('dropdown-btn');
+
+    const dropCnt = navTools.querySelector('.menu-list > li > ul');
+    if (dropCnt) dropCnt.classList.add('dropdown-content');
+  }
+  // Add dropdown open/close behavior
+  const dropdownBtn = nav.querySelector(".dropdown-btn");
+  const dropdownContent = nav.querySelector(".dropdown-content");
+
+  if (dropdownBtn && dropdownContent) {
+    dropdownBtn.addEventListener("click", () => {
+      dropdownContent.style.display = dropdownContent.style.display === "block" ? "none" : "block";
+    });
+
+    // Close the dropdown when clicking outside
+    document.addEventListener("click", (event) => {
+      if (!dropdownBtn.contains(event.target) && !dropdownContent.contains(event.target)) {
+        dropdownContent.style.display = "none";
+      }
+    });
+  }
+
+  // Add hamburger for mobile
   const hamburger = document.createElement('div');
   hamburger.classList.add('nav-hamburger');
   hamburger.innerHTML = `<button type="button" aria-controls="nav" aria-label="Open navigation">
@@ -162,18 +211,15 @@ export default async function decorate(block) {
   hamburger.addEventListener('click', () => toggleMenu(nav, navSections));
   nav.prepend(hamburger);
   nav.setAttribute('aria-expanded', 'false');
-  // prevent mobile nav behavior on window resize
+
+  // Prevent mobile nav behavior on window resize
   toggleMenu(nav, navSections, isDesktop.matches);
   isDesktop.addEventListener('change', () => toggleMenu(nav, navSections, isDesktop.matches));
 
+  // Wrap the entire nav for styling consistency
   const navWrapper = document.createElement('div');
   navWrapper.className = 'nav-wrapper';
   navWrapper.append(nav);
   block.append(navWrapper);
-  const newSec = nav.querySelector('.nav-sections div');
-  newSec.classList.add('content-wrapper');
-  const underLine = nav.querySelector('.nav-sections div>ul');
-  underLine.classList.add('nav-list');
-  const language = nav.querySelector('.nav-sections .nav-drop>ul');
-  language.classList.add('nav-lang');
 }
+
