@@ -404,11 +404,17 @@
         "label": "Style",
         "options": [
           {
-            "name": "XCL World Academy",
+            "name": "Set Sub Header Class Name",
             "children": [
               {
-                "name": "Hero Video Banner",
-                "value": "hero-video-banner"
+                "name": "Invest",
+                "value": "invest"
+              },{
+                "name": "Plans",
+                "value": "plans"
+              },{
+                "name": "Education",
+                "value": "education"
               }
             ]
           }
