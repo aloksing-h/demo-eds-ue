@@ -396,7 +396,7 @@
     ]
   },
   {
-    "id": "header-sub-block",
+    "id": "header-sub-block-item",
     "fields": [
       {
         "component": "multiselect",
@@ -421,17 +421,21 @@
         ]
       },
       {
-        "component": "richtext",
-        "name": "text",
-        "value": "",
-        "label": "Set Sub Header Structure",
-        "valueType": "string"
+        "component": "reference",
+        "name": "image",
+        "label": "Image",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "name": "imageAlt",
+        "label": "Alt Text"
       },
       {
         "component": "richtext",
         "name": "text",
         "value": "",
-        "label": "Sub Header Structure second",
+        "label": "Set Sub Header Structure",
         "valueType": "string"
       }
     ]
