@@ -201,6 +201,21 @@ export default async function decorate(block) {
         buttonContainer.classList.add('btn-cont');
       }
     }
+    const plans = navTools.querySelector('[title="PLANS"]');
+    const planBlock = nav.querySelector('.header-sub-block-container');
+
+    if (plans && planBlock) {
+      const buttonContainer = plans.closest('.button-container');
+
+      if (buttonContainer) {
+        buttonContainer.classList.add('plans-btn');
+
+        plans.addEventListener("click", () => {
+          planBlock.style.display = planBlock.style.display === "block" ? "none" : "block";
+        });
+      }
+    }
+
   }
   // Add dropdown open/close behavior
   const dropdownBtn = nav.querySelector(".dropdown-btn");

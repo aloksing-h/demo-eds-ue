@@ -426,6 +426,13 @@
         "value": "",
         "label": "Set Sub Header Structure",
         "valueType": "string"
+      },
+      {
+        "component": "richtext",
+        "name": "text",
+        "value": "",
+        "label": "Sub Header Structure second",
+        "valueType": "string"
       }
     ]
   }
