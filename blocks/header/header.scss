@@ -204,6 +204,7 @@ header {
                     display: flex;
                     align-items: center;
                     justify-content: center;
+                    gap: 4px;
 
                     &::after {
                         content: "";
@@ -212,8 +213,8 @@ header {
                         background-position: center;
                         background-size: 100%;
                         display: flex;
-                        width: 20px;
-                        height: 20px;
+                        width: 16px;
+                        height: 16px;
                         justify-content: center;
                         align-items: center;
                         flex-shrink: 0;
@@ -246,15 +247,22 @@ header {
                         border-radius: unset;
                     }
 
-                    .login-btn {
-                        background-color: #2b2e8c;
-                        color: #fff;
-                        border-radius: 20px;
-                        padding: 6px 23px;
-                        font-size: 14px;
-                        line-height: 20px;
-                        font-weight: 500;
+                    &.btn-cont {
+                        &::after {
+                            content: unset;
+                        }
+
+                        .login-btn {
+                            background-color: #2b2e8c;
+                            color: #fff;
+                            border-radius: 20px;
+                            padding: 6px 23px;
+                            font-size: 14px;
+                            line-height: 20px;
+                            font-weight: 500;
+                        }
                     }
+
                 }
             }
         }

@@ -175,6 +175,7 @@ header .nav-Content .nav-tools .menu-wrapper .button-container {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 4px;
 }
 header .nav-Content .nav-tools .menu-wrapper .button-container::after {
   content: "";
@@ -183,8 +184,8 @@ header .nav-Content .nav-tools .menu-wrapper .button-container::after {
   background-position: center;
   background-size: 100%;
   display: flex;
-  width: 20px;
-  height: 20px;
+  width: 16px;
+  height: 16px;
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
@@ -210,7 +211,10 @@ header .nav-Content .nav-tools .menu-wrapper .button-container .button {
   border: none;
   border-radius: unset;
 }
-header .nav-Content .nav-tools .menu-wrapper .button-container .login-btn {
+header .nav-Content .nav-tools .menu-wrapper .button-container.btn-cont::after {
+  content: unset;
+}
+header .nav-Content .nav-tools .menu-wrapper .button-container.btn-cont .login-btn {
   background-color: #2b2e8c;
   color: #fff;
   border-radius: 20px;
