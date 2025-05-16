@@ -180,13 +180,27 @@ export default async function decorate(block) {
     if (dropDW) dropDW.classList.add('dropdown');
 
     const dropBtn = navTools.querySelector('.menu-list > li > p');
-    if (dropBtn) dropBtn.classList.add('dropdown-btn');
+    if (dropBtn) {
+      dropBtn.classList.add('dropdown-btn');
+
+      dropBtn.addEventListener('click', () => {
+        dropBtn.classList.toggle('active');
+      });
+    }
 
     const dropCnt = navTools.querySelector('.menu-list > li > ul');
     if (dropCnt) dropCnt.classList.add('dropdown-content');
 
     const loginEl = navTools.querySelector('[title="login"]');
     if (loginEl) loginEl.classList.add('login-btn');
+
+    const loginBtn = navTools.querySelector('.login-btn');
+    if (loginBtn) {
+      const buttonContainer = loginBtn.closest('.button-container');
+      if (buttonContainer) {
+        buttonContainer.classList.add('btn-cont');
+      }
+    }
   }
   // Add dropdown open/close behavior
   const dropdownBtn = nav.querySelector(".dropdown-btn");
@@ -225,4 +239,3 @@ export default async function decorate(block) {
   navWrapper.append(nav);
   block.append(navWrapper);
 }
-

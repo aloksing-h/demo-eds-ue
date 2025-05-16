@@ -12,17 +12,14 @@ header {
     }
 
     nav {
-        box-sizing: border-box;
         display: flex;
-        // gap: 0 24px;
-        margin: auto;
         max-width: 1248px;
+        margin: 0 auto;
         height: auto;
-        // padding: 0 24px;
         font-family: var(--body-font-family);
 
         .nav-brand {
-            width: 20%;
+            width: 14%;
 
             img {
                 width: 150px;
@@ -36,7 +33,7 @@ header {
     }
 
     .nav-Content {
-        width: 80%;
+        width: 86%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -59,6 +56,8 @@ header {
                             display: flex;
                             align-items: center;
                             gap: 5px;
+                            font-size: 14px;
+                            font-weight: 500;
                         }
                     }
 
@@ -102,32 +101,86 @@ header {
                             justify-content: space-between;
                             border-radius: 8px;
                             width: 84%;
+
+                            &::after {
+                                content: "";
+                                background-image: url(/icons/arrow-down-black.svg);
+                                background-repeat: no-repeat;
+                                background-position: center;
+                                background-size: 100%;
+                                display: flex;
+                                width: 20px;
+                                height: 20px;
+                                justify-content: center;
+                                align-items: center;
+                                flex-shrink: 0;
+                            }
+
+                            &.active {
+                                &::after {
+                                    transform: rotate(180deg);
+
+                                }
+                            }
                         }
 
                         .dropdown-content {
                             display: none;
                             position: absolute;
-                            background-color: #f0f0ff;
-                            min-width: 250px;
-                            margin-top: 10px;
+                            background-color: #ffffff;
+                            margin-top: 2px;
+                            padding: 8px 0px;
                             border-radius: 5px;
-                            padding: 0;
+                            opacity: 1;
+                            transform: none;
+                            min-width: 119px;
+                            transition: opacity 251ms cubic-bezier(0.4, 0, 0.2, 1), transform 167ms cubic-bezier(0.4, 0, 0.2, 1);
+                            transform-origin: 155px 0px;
                             list-style: none;
                             z-index: 1;
                         }
 
-                        .dropdown-content li a {
-                            display: block;
-                            padding: 10px 20px;
-                            color: #2b2e8c;
+                        .dropdown-content li {
+                            background-color: transparent;
+                            outline: 0px;
+                            border: 0px;
+                            margin: 0px;
+                            border-radius: 0px;
+                            cursor: pointer;
+                            user-select: none;
+                            vertical-align: middle;
+                            appearance: none;
+                            color: inherit;
+                            font-family: Roboto, Helvetica, Arial, sans-serif;
+                            font-weight: 400;
+                            font-size: 1rem;
+                            line-height: 1.5;
+                            letter-spacing: 0.00938em;
+                            display: flex;
+                            justify-content: flex-start;
+                            align-items: center;
+                            position: relative;
                             text-decoration: none;
-                            border-radius: 5px;
+                            min-height: auto;
+                            box-sizing: border-box;
+                            white-space: nowrap;
+                            padding: 0px;
+
+                            a {
+                                width: 100%;
+                                display: block;
+                                color: #2b2e8c;
+                                padding: 6px 16px;
+                                border-radius: 5px;
+                                text-decoration: none;
+                            }
                         }
 
                         .dropdown-content li a:hover {
-                            background-color: #dadae9;
+                            background-color: rgba(25, 118, 210, 0.08);
                         }
                     }
+
                 }
 
                 & ul {
@@ -152,6 +205,27 @@ header {
                     align-items: center;
                     justify-content: center;
 
+                    &::after {
+                        content: "";
+                        background-image: url(/icons/arrow-down-black.svg);
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: 100%;
+                        display: flex;
+                        width: 20px;
+                        height: 20px;
+                        justify-content: center;
+                        align-items: center;
+                        flex-shrink: 0;
+                    }
+
+                    &.active {
+                        &::after {
+                            transform: rotate(180deg);
+
+                        }
+                    }
+
                     .button {
                         margin: 0;
                         padding: 0;
@@ -159,9 +233,9 @@ header {
                         color: #2b2e8c;
                         max-width: 100%;
                         font-family: var(--body-font-family);
-                        font-style: normal;
+                        font-size: 14px;
                         font-weight: 500;
-                        line-height: 1.25;
+                        // line-height: 1.25;
                         text-align: center;
                         text-decoration: none;
                         cursor: pointer;
