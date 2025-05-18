@@ -477,16 +477,17 @@
         "label": "Alt Text"
       },
       {
-        "component": "text",
-        "name": "name",
-        "label": "header section",
-        "description": "section in the Content Tree"
+        "component": "richtext",
+        "name": "text",
+        "value": "",
+        "label": "Set Sub Header Structure",
+        "valueType": "string"
       },
       {
         "component": "richtext",
         "name": "text",
         "value": "",
-        "label": "Set Sub Header Structure",
+        "label": "Set Sub Header Structure2",
         "valueType": "string"
       }
     ]
