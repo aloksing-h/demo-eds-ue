@@ -444,6 +444,28 @@
     "id": "header-sub-item",
     "fields": [
       {
+        "component": "multiselect",
+        "name": "classes",
+        "label": "Style",
+        "options": [
+          {
+            "name": "Set Sub Header Class Name",
+            "children": [
+              {
+                "name": "Invest",
+                "value": "invest"
+              },{
+                "name": "Plans",
+                "value": "plans"
+              },{
+                "name": "Education",
+                "value": "education"
+              }
+            ]
+          }
+        ]
+      },
+      {
         "component": "reference",
         "name": "image",
         "label": "Image",
@@ -457,18 +479,9 @@
       {
         "component": "richtext",
         "name": "text",
-        "label": "Description",
-        "raw": true
-      },
-      {
-        "component": "aem-content",
-        "name": "link",
-        "label": "Link"
-      },
-      {
-        "component": "text",
-        "name": "linkText",
-        "label": "Text"
+        "value": "",
+        "label": "Set Sub Header Structure",
+        "valueType": "string"
       }
     ]
   }
