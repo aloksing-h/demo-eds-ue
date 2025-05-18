@@ -477,6 +477,12 @@
         "label": "Alt Text"
       },
       {
+        "component": "text",
+        "name": "name",
+        "label": "header section",
+        "description": "section in the Content Tree"
+      },
+      {
         "component": "richtext",
         "name": "text",
         "value": "",
