@@ -2,22 +2,28 @@
 header {
   height: auto;
 }
-header .nav-wrapper {
-  background-color: var(--background-color);
+header .header {
   width: 100%;
-  z-index: 2;
+  display: flex;
+  justify-content: center;
+}
+header .nav-wrapper {
+  width: 100%;
   position: fixed;
   top: 0;
+  background-color: var(--background-color);
   padding: 20px;
+  z-index: 2;
 }
 header nav {
-  display: flex;
-  justify-content: space-between;
-  max-width: 1248px;
+  position: relative;
+  max-width: 94.12%;
+  width: 100%;
   margin: 0 auto;
   height: auto;
+  display: flex;
+  justify-content: space-between;
   font-family: var(--body-font-family);
-  position: relative;
 }
 header nav .nav-brand {
   width: 14%;
@@ -31,10 +37,12 @@ header nav .header-sub-block-container {
 }
 header nav .header-sub-block-container .header-sub-block-wrapper {
   display: block;
+  width: 100%;
   position: absolute;
   top: 115px;
-  left: 0;
+  left: 0px;
   background: #fff;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.1), 0 20px 40px rgba(0, 0, 0, 0.18);
 }
 header .nav-hamburger {
   display: none;
