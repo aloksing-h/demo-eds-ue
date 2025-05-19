@@ -54,11 +54,16 @@ header {
                         display: none;
                     }
 
-                    & > ul {
-                        display: flex;
-                        justify-content: space-between;
-                        padding: 40px;
-                        list-style: none;
+                    .hd-ntd-cnt {
+                        &>ul {
+                            display: flex;
+                            justify-content: space-between;
+                            padding: 40px;
+                        }
+
+                        ul {
+                            list-style: none;
+                        }
                     }
                 }
 

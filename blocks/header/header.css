@@ -47,10 +47,12 @@ header nav .header-sub-container .header-sub-wrapper {
 header nav .header-sub-container .header-sub-wrapper .header-sub > div > div > p {
   display: none;
 }
-header nav .header-sub-container .header-sub-wrapper .header-sub > ul {
+header nav .header-sub-container .header-sub-wrapper .header-sub .hd-ntd-cnt > ul {
   display: flex;
   justify-content: space-between;
   padding: 40px;
+}
+header nav .header-sub-container .header-sub-wrapper .header-sub .hd-ntd-cnt ul {
   list-style: none;
 }
 header .nav-hamburger {

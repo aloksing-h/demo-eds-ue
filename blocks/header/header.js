@@ -217,19 +217,23 @@ export default async function decorate(block) {
     }
   }
   // Select the main wrapper
-  const headerSubBlock = document.querySelector('.header-sub.block');
-
+  const headerSubBlock = nav.querySelector('.header-sub-container .header-sub');
   if (headerSubBlock) {
-    // Select the first nested div (the one with more child divs)
     const firstDiv = headerSubBlock.children[0];
-
-    // Select the second nested div (with the <ul>)
     const secondDiv = headerSubBlock.children[2];
-
-    // Add classes
-    if (firstDiv) firstDiv.classList.add('first-nested');
-    if (secondDiv) secondDiv.classList.add('second-nested');
+    if (firstDiv) firstDiv.classList.add('hd-ntd');
+    if (secondDiv) secondDiv.classList.add('sec-ntd');
   }
+  const subCont = headerSubBlock.querySelector('.hd-ntd');
+  if (subCont) {
+    const firstDiv = subCont.children[0];
+    const secondDiv = subCont.children[2];
+    if (firstDiv) firstDiv.classList.add('hd-ntd-1');
+    if (secondDiv) secondDiv.classList.add('hd-ntd-cnt');
+  }
+  // nav.querySelector('.hd-ntd-1').remove();
+  // nav.querySelector('.hd-ntd>div').remove();
+
 
   // Add dropdown open/close behavior
   const dropdownBtn = nav.querySelector(".dropdown-btn");

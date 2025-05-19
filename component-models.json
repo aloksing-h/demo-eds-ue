@@ -412,57 +412,12 @@
     ]
   },
   {
-    "id": "header-sub-block-item",
-    "fields": [
-      {
-        "component": "multiselect",
-        "name": "classes",
-        "label": "Style",
-        "options": [
-          {
-            "name": "Set Sub Header Class Name",
-            "children": [
-              {
-                "name": "Invest",
-                "value": "invest"
-              },{
-                "name": "Plans",
-                "value": "plans"
-              },{
-                "name": "Education",
-                "value": "education"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "component": "reference",
-        "name": "image",
-        "label": "Image",
-        "multi": false
-      },
-      {
-        "component": "text",
-        "name": "imageAlt",
-        "label": "Alt Text"
-      },
-      {
-        "component": "richtext",
-        "name": "text",
-        "value": "",
-        "label": "Set Sub Header Structure",
-        "valueType": "string"
-      }
-    ]
-  },
-   {
     "id": "header-sub-item",
     "fields": [
       {
         "component": "multiselect",
         "name": "classes",
-        "label": "Style",
+        "label": "style",
         "options": [
           {
             "name": "Set Sub Header Class Name",
@@ -470,10 +425,12 @@
               {
                 "name": "Invest",
                 "value": "invest"
-              },{
+              },
+              {
                 "name": "Plans",
                 "value": "plans"
-              },{
+              },
+              {
                 "name": "Education",
                 "value": "education"
               }
