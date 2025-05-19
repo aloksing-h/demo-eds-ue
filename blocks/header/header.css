@@ -32,10 +32,10 @@ header nav .nav-brand img {
   width: 150px;
   height: auto;
 }
-header nav .header-sub-block-container {
+header nav .header-sub-container {
   display: none;
 }
-header nav .header-sub-block-container .header-sub-block-wrapper {
+header nav .header-sub-container .header-sub-wrapper {
   display: block;
   width: 100%;
   position: absolute;
@@ -43,6 +43,15 @@ header nav .header-sub-block-container .header-sub-block-wrapper {
   left: 0px;
   background: #fff;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.1), 0 20px 40px rgba(0, 0, 0, 0.18);
+}
+header nav .header-sub-container .header-sub-wrapper .header-sub > div > div > p {
+  display: none;
+}
+header nav .header-sub-container .header-sub-wrapper .header-sub > ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  list-style: none;
 }
 header .nav-hamburger {
   display: none;

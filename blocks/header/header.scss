@@ -37,10 +37,10 @@ header {
             }
         }
 
-        .header-sub-block-container {
+        .header-sub-container {
             display: none;
 
-            .header-sub-block-wrapper {
+            .header-sub-wrapper {
                 display: block;
                 width: 100%;
                 position: absolute;
@@ -48,6 +48,19 @@ header {
                 left: 0px;
                 background: #fff;
                 box-shadow: 0 0 2px rgba(0, 0, 0, .1), 0 20px 40px rgba(0, 0, 0, .18);
+
+                .header-sub {
+                    &>div>div>p {
+                        display: none;
+                    }
+
+                    & > ul {
+                        display: flex;
+                        justify-content: space-between;
+                        padding: 40px;
+                        list-style: none;
+                    }
+                }
 
             }
         }

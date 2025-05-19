@@ -202,7 +202,7 @@ export default async function decorate(block) {
       }
     }
     const plans = navTools.querySelector('[title="PLANS"]');
-    const planBlock = nav.querySelector('.header-sub-block-container');
+    const planBlock = nav.querySelector('.header-sub-container');
 
     if (plans && planBlock) {
       const buttonContainer = plans.closest('.button-container');
