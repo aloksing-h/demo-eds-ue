@@ -412,7 +412,7 @@
     ]
   },
   {
-    "id": "header-sub-item",
+    "id": "header-sub",
     "fields": [
       {
         "component": "multiselect",

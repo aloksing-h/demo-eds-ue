@@ -48,9 +48,5 @@
   {
     "id": "header-sub-block",
     "components": ["header-sub-block-item"]
-  },
-  {
-    "id": "header-sub",
-    "components": ["header-sub-item"]
   }
 ]
