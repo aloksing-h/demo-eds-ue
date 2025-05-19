@@ -417,7 +417,8 @@
       {
         "component": "multiselect",
         "name": "classes",
-        "label": "style",
+        "label": "Style",
+        "valueType":"string",
         "options": [
           {
             "name": "Set Sub Header Class Name",
