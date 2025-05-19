@@ -44,9 +44,6 @@ header nav .header-sub-container .header-sub-wrapper {
   background: #fff;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.1), 0 20px 40px rgba(0, 0, 0, 0.18);
 }
-header nav .header-sub-container .header-sub-wrapper .header-sub > div > div > p {
-  display: none;
-}
 header nav .header-sub-container .header-sub-wrapper .header-sub .hd-ntd-cnt > ul {
   display: flex;
   justify-content: space-between;

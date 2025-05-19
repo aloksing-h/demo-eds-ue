@@ -434,6 +434,10 @@
               {
                 "name": "Education",
                 "value": "education"
+              },
+              {
+                "name": "THE MOTILAL OSWAL EDGE",
+                "value": "mfedge"
               }
             ]
           }

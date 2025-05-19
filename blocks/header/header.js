@@ -201,20 +201,40 @@ export default async function decorate(block) {
         buttonContainer.classList.add('btn-cont');
       }
     }
-    const plans = navTools.querySelector('[title="PLANS"]');
+    // const plans = navTools.querySelector('[title="PLANS"]');
     const planBlock = nav.querySelector('.header-sub-container');
-
-    if (plans && planBlock) {
-      const buttonContainer = plans.closest('.button-container');
-
-      if (buttonContainer) {
-        buttonContainer.classList.add('plans-btn');
-
-        plans.addEventListener("click", () => {
-          planBlock.style.display = planBlock.style.display === "block" ? "none" : "block";
-        });
+    navTools.querySelectorAll(".nav-tools .button-container").forEach((element, index) => {
+      if (index < 4) {
+        element.querySelector("a").setAttribute("data-btn", element.querySelector("a").getAttribute("title"));
+        element.addEventListener("click", (events) => {
+          navTools.querySelectorAll(".nav-tools .button-container").forEach((elem, childIndex) => {
+            if (childIndex < 4) {
+              let querySearch = elem.querySelector("a").getAttribute("title").toLowerCase();
+              planBlock.style.display = "block";
+              if (planBlock.querySelector("." + querySearch) != null) {
+                planBlock.querySelector("." + querySearch).style.display = "none"
+              }
+            }
+          })
+          let querySearch = events.target.getAttribute("title").toLowerCase();
+          planBlock.style.display = "block";
+          planBlock.querySelector("." + querySearch).style.display = "block"
+        })
       }
-    }
+    })
+
+
+    // if (plans && planBlock) {
+    //   const buttonContainer = plans.closest('.button-container');
+
+    //   if (buttonContainer) {
+    //     buttonContainer.classList.add('plans-btn');
+
+    //     plans.addEventListener("click", () => {
+    //       planBlock.style.display = planBlock.style.display === "block" ? "none" : "block";
+    //     });
+    //   }
+    // }
   }
   // Select the main wrapper
   const headerSubBlock = nav.querySelector('.header-sub-container .header-sub');
