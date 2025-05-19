@@ -215,8 +215,22 @@ export default async function decorate(block) {
         });
       }
     }
-
   }
+  // Select the main wrapper
+  const headerSubBlock = document.querySelector('.header-sub.block');
+
+  if (headerSubBlock) {
+    // Select the first nested div (the one with more child divs)
+    const firstDiv = headerSubBlock.children[0];
+
+    // Select the second nested div (with the <ul>)
+    const secondDiv = headerSubBlock.children[2];
+
+    // Add classes
+    if (firstDiv) firstDiv.classList.add('first-nested');
+    if (secondDiv) secondDiv.classList.add('second-nested');
+  }
+
   // Add dropdown open/close behavior
   const dropdownBtn = nav.querySelector(".dropdown-btn");
   const dropdownContent = nav.querySelector(".dropdown-content");
@@ -233,6 +247,7 @@ export default async function decorate(block) {
       }
     });
   }
+
 
   // Add hamburger for mobile
   const hamburger = document.createElement('div');

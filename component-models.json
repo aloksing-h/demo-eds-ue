@@ -154,8 +154,8 @@
             "value": "header-navs"
           },
           {
-            "name": "Header Sub",
-            "value": "header-sub"
+            "name": "Header Sub section",
+            "value": "header-sub-section"
           }
         ]
       }
