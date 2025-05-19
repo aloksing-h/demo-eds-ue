@@ -142,8 +142,20 @@
             "value": "accordion"
           },
           {
-            "name": "Header Container",
-            "value": "header-container"
+            "name": "Header Logo",
+            "value": "header-logo"
+          },
+          {
+            "name": "Header Top",
+            "value": "header-top"
+          },
+          {
+            "name": "Header Navs",
+            "value": "header-navs"
+          },
+          {
+            "name": "Header Sub",
+            "value": "header-sub"
           }
         ]
       }
