@@ -44,9 +44,5 @@
   {
     "id": "swiper-sec",
     "components": ["swiper-sec-item"]
-  },
-  {
-    "id": "header-sub-block",
-    "components": ["header-sub-block-item"]
   }
 ]

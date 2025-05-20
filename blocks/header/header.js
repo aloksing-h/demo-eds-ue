@@ -206,20 +206,27 @@ export default async function decorate(block) {
     navTools.querySelectorAll(".nav-tools .button-container").forEach((element, index) => {
       if (index < 4) {
         element.querySelector("a").setAttribute("data-btn", element.querySelector("a").getAttribute("title"));
+        
         element.addEventListener("click", (events) => {
           navTools.querySelectorAll(".nav-tools .button-container").forEach((elem, childIndex) => {
             if (childIndex < 4) {
-              let querySearch = elem.querySelector("a").getAttribute("title").toLowerCase();
-              planBlock.style.display = "block";
-              if (planBlock.querySelector("." + querySearch) != null) {
-                planBlock.querySelector("." + querySearch).style.display = "none"
+              const link = elem.querySelector("a");
+              const querySearch = link.getAttribute("title").toLowerCase();
+              const section = planBlock.querySelector("." + querySearch);
+              if (section) {
+                // Toggle the clicked section
+                if (events.target.getAttribute("title").toLowerCase() === querySearch) {
+                  const isVisible = section.style.display === "block";
+                  section.style.display = isVisible ? "none" : "block";
+                  planBlock.style.display = isVisible ? "none" : "block";
+                } else {
+                  section.style.display = "none";
+                }
               }
             }
-          })
-          let querySearch = events.target.getAttribute("title").toLowerCase();
-          planBlock.style.display = "block";
-          planBlock.querySelector("." + querySearch).style.display = "block"
-        })
+          });
+        });
+
       }
     })
 

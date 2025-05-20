@@ -418,7 +418,7 @@
         "component": "multiselect",
         "name": "classes",
         "label": "Style",
-        "valueType":"string",
+        "valueType": "string",
         "options": [
           {
             "name": "Set Sub Header Class Name",
@@ -459,6 +459,13 @@
         "name": "text",
         "value": "",
         "label": "Set Sub Header Structure",
+        "valueType": "string"
+      },
+      {
+        "component": "richtext",
+        "name": "text",
+        "value": "",
+        "label": "Set Sub ",
         "valueType": "string"
       }
     ]

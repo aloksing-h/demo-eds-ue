@@ -41,18 +41,22 @@ header {
             display: none;
 
             .header-sub-wrapper {
-                display: block;
-                width: 100%;
-                position: absolute;
-                top: 115px;
-                left: 0px;
-                background: #fff;
-                box-shadow: 0 0 2px rgba(0, 0, 0, .1), 0 20px 40px rgba(0, 0, 0, .18);
+                // display: block;
+                // width: 100%;
+                // position: absolute;
+                // top: 115px;
+                // left: 0px;
+                // background: #fff;
+                // box-shadow: 0 0 2px rgba(0, 0, 0, .1), 0 20px 40px rgba(0, 0, 0, .18);
 
                 .header-sub {
-                    // &>div>div>p {
-                    //     display: none;
-                    // }
+                    // display: block;
+                    width: 100%;
+                    position: absolute;
+                    top: 115px;
+                    left: 0px;
+                    background: #fff;
+                    box-shadow: 0 0 2px rgba(0, 0, 0, .1), 0 20px 40px rgba(0, 0, 0, .18);
 
                     .hd-ntd-cnt {
                         &>ul {
