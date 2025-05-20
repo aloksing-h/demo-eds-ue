@@ -465,7 +465,7 @@
         "component": "richtext",
         "name": "text",
         "value": "",
-        "label": "Set Sub ASDCFVB ",
+        "label": "Text",
         "valueType": "string"
       }
     ]
