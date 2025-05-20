@@ -437,7 +437,7 @@
               },
               {
                 "name": "THE MOTILAL OSWAL EDGE",
-                "value": "mfedge"
+                "value": "The motilal oswal edge"
               }
             ]
           }
@@ -460,11 +460,6 @@
         "value": "",
         "label": "Set Sub Header Structure",
         "valueType": "string"
-      },
-      {
-        "component": "text",
-        "name": "title",
-        "label": "Title"
       }
     ]
   }
