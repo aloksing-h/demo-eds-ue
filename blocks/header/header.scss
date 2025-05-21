@@ -41,16 +41,8 @@ header {
             display: none;
 
             .header-sub-wrapper {
-                // display: block;
-                // width: 100%;
-                // position: absolute;
-                // top: 115px;
-                // left: 0px;
-                // background: #fff;
-                // box-shadow: 0 0 2px rgba(0, 0, 0, .1), 0 20px 40px rgba(0, 0, 0, .18);
 
                 .header-sub {
-                    // display: block;
                     width: 100%;
                     position: absolute;
                     top: 115px;
@@ -72,7 +64,6 @@ header {
 
                     & .sec-ntd {
                         width: auto;
-                        padding: 40px;
 
                         &>div {
                             display: flex;
@@ -83,34 +74,96 @@ header {
                                 display: flex;
                                 flex-direction: column;
                                 gap: 12px;
+                            }
 
-                                li {
-                                    display: flex;
-                                    flex-direction: column;
-                                    gap: 12px;
+                            .sec-invest-in {
+                                border-top-left-radius: 8px;
+                                border-bottom-left-radius: 8px;
+                            }
 
-                                    ul {
+                            .sec-calculator {
+                                border-top-right-radius: 8px;
+                                border-bottom-right-radius: 8px;
+                            }
+
+                            .sec-invest-in,
+                            .sec-calculator {
+                                width: 50%;
+                                flex: 1;
+                                display: flex;
+                                flex-direction: column;
+                                align-items: flex-start;
+                                align-self: stretch;
+                                gap: 28px;
+                                background: var(--color-white);
+                                padding: 24px 0 0 24px;
+
+                                .nav-menu-title {
+                                    margin: 0;
+                                    padding: 0;
+                                    color: #2e2a94;
+                                    font-size: 14px;
+                                    font-style: normal;
+                                    font-weight: 600;
+                                    line-height: 22px;
+                                    text-transform: uppercase;
+                                    padding-bottom: 8px;
+                                    margin: 0 0 -8px;
+                                    border-bottom: 1px solid lightgray;
+                                    min-width: 90%;
+                                    min-height: 31px;
+                                }
+
+                                ul {
+                                    display: grid;
+                                    grid-template-columns: repeat(2, 1fr);
+                                    padding: 0 24px 24px 0;
+                                    background: inherit;
+                                    min-width: 0;
+                                    align-items: flex-start;
+                                    align-self: stretch;
+                                    gap: 28px;
+                                    cursor: default;
+
+                                    li {
                                         display: flex;
-                                        flex-direction: column;
-                                        gap: 12px;
+                                        align-items: center;
+                                        gap: 8px;
+                                        width: 100%;
+
+                                        a {
+                                            display: flex;
+                                            align-items: center;
+                                            gap: 8px;
+                                            color: #2e2a94;
+                                            font-size: 14px;
+                                            font-style: normal;
+                                            font-weight: 600;
+                                            line-height: 24px;
+                                            letter-spacing: -0.16px;
+                                            margin: 0;
+                                            white-space: nowrap;
+                                            overflow: hidden;
+                                            text-overflow: ellipsis;
+                                            text-decoration: none;
+                                            cursor: pointer;
+
+                                            .icon {
+                                                display: flex;
+                                                justify-content: center;
+                                                align-items: center;
+
+                                                img {
+                                                    max-width: 40px;
+                                                    max-height: 40px;
+                                                    object-fit: cover;
+                                                }
+                                            }
+                                        }
                                     }
                                 }
                             }
 
-                            .sec-invest-in {
-                                width: 50%;
-
-                                ul {
-                                    display: flex;
-                                    flex-wrap: wrap;
-                                    flex-direction: unset;
-                                    gap: 12px;
-                                }
-                            }
-
-                            .sec-calculator {
-                                width: 50%;
-                            }
                         }
 
                     }
@@ -129,6 +182,7 @@ header {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        gap: 6px;
 
         .nav-sections {
             padding-bottom: 15px;
@@ -165,7 +219,34 @@ header {
         .nav-tools {
             .menu-wrapper {
                 display: flex;
+                align-items: center;
                 justify-content: space-between;
+
+                h4 {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin: 0;
+                    padding: 0;
+                    border: 1px solid #2b2e8c;
+                    border-radius: 16px;
+
+                    a {
+                        background-color: transparent;
+                        color: #2b2e8c;
+                        max-width: 100%;
+                        padding: 6px 15px;
+                        font-family: var(--body-font-family);
+                        font-size: 14px;
+                        font-weight: 500;
+                        text-align: center;
+                        text-decoration: none;
+                        cursor: pointer;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                    }
+                }
 
                 .menu-list {
                     padding: 0;
@@ -289,6 +370,26 @@ header {
                 p {
                     display: flex;
                     align-items: center;
+
+                    .icon-search {
+                        width: auto;
+                    }
+
+                    input {
+                        margin: 0 10px;
+                        padding: 3px 12px;
+                        font-size: 15px;
+                        border-radius: 16px;
+                        border: 1px solid gray;
+                    }
+                }
+
+                input[type="text" i] {
+
+                    &:focus-visible {
+                        outline: none;
+                        // border: none;
+                    }
                 }
 
                 .button-container {

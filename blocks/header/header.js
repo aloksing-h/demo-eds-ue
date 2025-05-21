@@ -201,6 +201,29 @@ export default async function decorate(block) {
         buttonContainer.classList.add('btn-cont');
       }
     }
+
+    // search-box
+    const searchImg = navTools.querySelector('img[data-icon-name="search"]');
+
+    searchImg.addEventListener('click', () => {
+      const paragraph = searchImg.closest('p');
+
+      // Add class to paragraph
+      paragraph.classList.add('search-active');
+
+      searchImg.style.display = 'none';
+
+      // Check if input already exists
+      if (!paragraph.querySelector('input')) {
+        const input = document.createElement('input');
+        input.type = 'text';
+        input.placeholder = 'Search...';
+
+        paragraph.appendChild(input);
+        input.focus();
+      }
+    });
+
     // const plans = navTools.querySelector('[title="PLANS"]');
     const planBlock = nav.querySelector('.header-sub-container');
     navTools.querySelectorAll(".nav-tools .button-container").forEach((element, index) => {
@@ -232,19 +255,6 @@ export default async function decorate(block) {
 
       }
     })
-
-
-    // if (plans && planBlock) {
-    //   const buttonContainer = plans.closest('.button-container');
-
-    //   if (buttonContainer) {
-    //     buttonContainer.classList.add('plans-btn');
-
-    //     plans.addEventListener("click", () => {
-    //       planBlock.style.display = planBlock.style.display === "block" ? "none" : "block";
-    //     });
-    //   }
-    // }
   }
   // Select the main wrapper
   const headerSubBlocks = nav.querySelectorAll('.header-sub-container .header-sub-wrapper .header-sub');
@@ -270,6 +280,8 @@ export default async function decorate(block) {
       const sectionClass = current.id ? `sec-${current.id}` : `sec-${i}`;
       wrapper.classList.add(sectionClass);
 
+      current.classList.add('nav-menu-title');
+
       wrapper.appendChild(current);
       wrapper.appendChild(next);
 
@@ -279,11 +291,6 @@ export default async function decorate(block) {
       i++;
     }
   }
-
-
-
-
-
 
   // Add dropdown open/close behavior
   const dropdownBtn = nav.querySelector(".dropdown-btn");
@@ -301,7 +308,6 @@ export default async function decorate(block) {
       }
     });
   }
-
 
   // Add hamburger for mobile
   const hamburger = document.createElement('div');
