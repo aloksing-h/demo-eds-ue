@@ -209,20 +209,20 @@ export default async function decorate(block) {
 
         element.addEventListener("click", (events) => {
           planBlock.style.display = "block";
-          if (planBlock.querySelector("." + events.target.getAttribute("title").toLowerCase()) != null) {
-            if (planBlock.querySelector("." + events.target.getAttribute("title").toLowerCase()).style.display == "block") {
-              planBlock.querySelector("." + events.target.getAttribute("title").toLowerCase()).style.display = "none"
+          if (planBlock.querySelector("." + events.target.getAttribute("title").toLowerCase().replaceAll(" ", "-")) != null) {
+            if (planBlock.querySelector("." + events.target.getAttribute("title").toLowerCase().replaceAll(" ", "-")).style.display == "block") {
+              planBlock.querySelector("." + events.target.getAttribute("title").toLowerCase().replaceAll(" ", "-")).style.display = "none"
               planBlock.style.display = "none"
             } else {
               navTools.querySelectorAll(".nav-tools .button-container").forEach((elem, childIndex) => {
                 if (childIndex < 4) {
                   const link = elem.querySelector("a");
-                  const querySearch = link.getAttribute("title").toLowerCase();
+                  const querySearch = link.getAttribute("title").toLowerCase().replaceAll(" ", "-");
                   const section = planBlock.querySelector("." + querySearch);
                   section != null ? section.style.display = "none" : ""
                 }
               });
-              planBlock.querySelector("." + events.target.getAttribute("title").toLowerCase()).style.display = "block"
+              planBlock.querySelector("." + events.target.getAttribute("title").toLowerCase().replaceAll(" ", "-")).style.display = "block"
             }
           } else {
             planBlock.style.display = "none"
@@ -247,22 +247,42 @@ export default async function decorate(block) {
     // }
   }
   // Select the main wrapper
-  const headerSubBlock = nav.querySelector('.header-sub-container .header-sub');
-  if (headerSubBlock) {
-    const firstDiv = headerSubBlock.children[0];
-    const secondDiv = headerSubBlock.children[2];
-    if (firstDiv) firstDiv.classList.add('hd-ntd');
-    if (secondDiv) secondDiv.classList.add('sec-ntd');
+  const headerSubBlocks = nav.querySelectorAll('.header-sub-container .header-sub-wrapper .header-sub');
+  if (headerSubBlocks.length) {
+    headerSubBlocks.forEach((headerSubBlock) => {
+      const firstDiv = headerSubBlock.children[0];
+      const secondDiv = headerSubBlock.children[1];
+      if (firstDiv) firstDiv.classList.add('hd-ntd');
+      if (secondDiv) secondDiv.classList.add('sec-ntd');
+    })
   }
-  const subCont = headerSubBlock.querySelector('.hd-ntd');
-  if (subCont) {
-    const firstDiv = subCont.children[0];
-    const secondDiv = subCont.children[2];
-    if (firstDiv) firstDiv.classList.add('hd-ntd-1');
-    if (secondDiv) secondDiv.classList.add('hd-ntd-cnt');
+
+  // Wrap <h3> and <ul> Together in Divs
+  const container = nav.querySelector('.sec-ntd > div');
+  let i = 0;
+
+  while (i < container.children.length - 1) {
+    const current = container.children[i];
+    const next = container.children[i + 1];
+
+    if (current.tagName === "H3" && next && next.tagName === "UL") {
+      const wrapper = document.createElement("div");
+      const sectionClass = current.id ? `sec-${current.id}` : `sec-${i}`;
+      wrapper.classList.add(sectionClass);
+
+      wrapper.appendChild(current);
+      wrapper.appendChild(next);
+
+      container.insertBefore(wrapper, container.children[i]);
+
+    } else {
+      i++;
+    }
   }
-  // nav.querySelector('.hd-ntd-1').remove();
-  // nav.querySelector('.hd-ntd>div').remove();
+
+
+
+
 
 
   // Add dropdown open/close behavior
