@@ -341,6 +341,7 @@ header .nav-Content .nav-tools .menu-wrapper .button-container {
   align-items: center;
   justify-content: center;
   gap: 4px;
+  cursor: pointer;
 }
 header .nav-Content .nav-tools .menu-wrapper .button-container::after {
   content: "";
