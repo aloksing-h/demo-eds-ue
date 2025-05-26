@@ -173,6 +173,14 @@ export default async function decorate(block) {
     const menuWrapper = navTools.querySelector('div');
     if (menuWrapper) menuWrapper.classList.add('menu-wrapper');
 
+    const wrapper = navTools.querySelector('.menu-wrapper');
+    const children = Array.from(wrapper.children);
+    const lastThree = children.slice(-3);
+    const newDiv = document.createElement('div');
+    newDiv.className = 'src-log-wrp';
+    lastThree.forEach(el => newDiv.appendChild(el));
+    wrapper.appendChild(newDiv);
+
     const menuList = navTools.querySelector('div > ul');
     if (menuList) menuList.classList.add('menu-list');
 

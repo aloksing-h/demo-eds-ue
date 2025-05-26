@@ -388,4 +388,8 @@ header .nav-Content .nav-tools .menu-wrapper .button-container.btn-cont .login-b
   font-size: 14px;
   line-height: 20px;
   font-weight: 500;
+}
+header .nav-Content .nav-tools .menu-wrapper .button-container .src-log-wrp {
+  display: flex;
+  gap: 10px;
 }/*# sourceMappingURL=header.css.map */
