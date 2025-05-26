@@ -220,7 +220,7 @@ header {
             .menu-wrapper {
                 display: flex;
                 align-items: center;
-                justify-content: space-between;
+                gap: 20px;
 
                 h4 {
                     display: flex;
@@ -460,6 +460,8 @@ header {
                     .src-log-wrp {
                         display: flex;
                         gap: 10px;
+                        flex: 1 0 0;
+                        justify-content: flex-end;
                     }
 
                 }

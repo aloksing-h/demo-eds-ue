@@ -186,7 +186,7 @@ header .nav-Content .nav-sections .content-wrapper .nav-list .nav-drop .nav-lang
 header .nav-Content .nav-tools .menu-wrapper {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  gap: 20px;
 }
 header .nav-Content .nav-tools .menu-wrapper h4 {
   display: flex;
@@ -392,4 +392,6 @@ header .nav-Content .nav-tools .menu-wrapper .button-container.btn-cont .login-b
 header .nav-Content .nav-tools .menu-wrapper .button-container .src-log-wrp {
   display: flex;
   gap: 10px;
+  flex: 1 0 0;
+  justify-content: flex-end;
 }/*# sourceMappingURL=header.css.map */
