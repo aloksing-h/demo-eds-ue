@@ -208,8 +208,69 @@ header {
                     }
 
                     .nav-drop {
+                        position: relative;
+                        cursor: pointer;
+
                         .nav-lang {
                             display: none;
+                            position: absolute;
+                            background: aliceblue;
+                            padding: 11px 2px;
+                            left: -50%;
+                            top: 30px;
+                            border-radius: 8px;
+                            list-style: none;
+                            box-shadow: 0 4px 32px 24px rgb(0 0 0 / 8%);
+
+                            &.visible {
+                                display: block;
+                            }
+
+                            li {
+                                padding: 3px 23px;
+                                margin: 0;
+                                line-height: normal;
+                                border-bottom: 1px solid gray;
+
+                                a {
+                                    font-family: Work Sans, sans-serif;
+                                    font-size: 14px;
+                                    line-height: 20px;
+                                    font-weight: 400;
+                                    color: #2b2e8c;
+                                    text-decoration: none;
+                                    white-space: nowrap;
+                                    margin: 0;
+                                }
+
+                                &:hover {
+                                    background-color: lightgray;
+                                }
+
+                                &:last-child {
+                                    border: none;
+                                }
+                            }
+                        }
+
+                        &>p::after {
+                            content: "";
+                            background-image: url(/icons/arrow-down-black.svg);
+                            background-repeat: no-repeat;
+                            background-position: center;
+                            background-size: 100%;
+                            display: flex;
+                            width: 15px;
+                            height: 15px;
+                            justify-content: center;
+                            align-items: center;
+                            flex-shrink: 0;
+                        }
+
+                        &.active {
+                            &::after {
+                                transform: rotate(180deg);
+                            }
                         }
                     }
                 }
@@ -456,14 +517,13 @@ header {
                             font-weight: 500;
                         }
                     }
+                }
 
-                    .src-log-wrp {
-                        display: flex;
-                        gap: 10px;
-                        flex: 1 0 0;
-                        justify-content: flex-end;
-                    }
-
+                .src-log-wrp {
+                    display: flex;
+                    gap: 10px;
+                    flex: 1 0 0;
+                    justify-content: flex-end;
                 }
             }
         }

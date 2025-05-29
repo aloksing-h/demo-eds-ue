@@ -181,6 +181,26 @@ export default async function decorate(block) {
     lastThree.forEach(el => newDiv.appendChild(el));
     wrapper.appendChild(newDiv);
 
+
+    // const dropdwnBtn = navTools.querySelector(".nav-drop");
+    // const dropdwnContent = navTools.querySelector(".nav-lang");
+
+    const dropdwnBtn = nav.querySelector(".nav-drop");
+    const dropdwnCont = nav.querySelector(".nav-lang");
+
+    if (dropdwnBtn && dropdwnCont) {
+      dropdwnBtn.addEventListener("click", () => {
+        dropdwnCont.style.display = dropdwnCont.style.display === "block" ? "none" : "block";
+      });
+
+      // Close the dropdown when clicking outside
+      document.addEventListener("click", (event) => {
+        if (!dropdwnBtn.contains(event.target) && !dropdwnCont.contains(event.target)) {
+          dropdwnCont.style.display = "none";
+        }
+      });
+    }
+
     const menuList = navTools.querySelector('div > ul');
     if (menuList) menuList.classList.add('menu-list');
 
