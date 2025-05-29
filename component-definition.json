@@ -336,7 +336,22 @@
               }
             }
           }
-        }
+        },
+        {
+          "title": "ETS FUNDS",
+          "id": "ets-funds",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "ETS FUNDS",
+                  "model": "ets-funds"
+                }
+              }
+            }
+          }
+        },
       ]
     }
   ]

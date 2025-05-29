@@ -462,5 +462,17 @@
         "valueType": "string"
       }
     ]
+  },
+  {
+    "id": "ets-funds",
+    "fields": [
+      {
+        "component": "richtext",
+        "name": "text",
+        "value": "",
+        "label": "Text",
+        "valueType": "string"
+      }
+    ]
   }
 ]
