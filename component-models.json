@@ -156,6 +156,18 @@
           {
             "name": "Header Sub section",
             "value": "header-sub-section"
+          },
+          {
+            "name": "Banner Sec",
+            "value": "banner-sec"
+          },
+          {
+            "name": "Why Exchange Traded",
+            "value": "why-exchange-traded"
+          },
+          {
+            "name": "ETF FUNDS",
+            "value": "etf-funds"
           }
         ]
       }
