@@ -1,4 +1,4 @@
-main .section.ets-funds-container {
+main .section.etf-funds-container {
     max-width: 1172px;
     width: 100%;
     margin: 0 auto;
@@ -18,10 +18,10 @@ main .section.ets-funds-container {
         }
     }
 
-    .ets-funds-wrapper {
+    .etf-funds-wrapper {
         padding: 0;
 
-        .ets-funds {
+        .etf-funds {
             display: flex;
             flex-wrap: wrap;
             gap: 32px;

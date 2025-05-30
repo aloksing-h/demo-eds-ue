@@ -1,7 +1,7 @@
 import { div, select, option, a, span, img, label } from "../../scripts/dom-helper.js";
 
 export default function decorate(block) {
-    const section = document.querySelector('.section.ets-funds-container');
+    const section = document.querySelector('.section.etf-funds-container');
     if (section) {
         const fundHead = section.querySelector('.default-content-wrapper');
         if (fundHead) {

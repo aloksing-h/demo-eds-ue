@@ -1,14 +1,14 @@
-main .section.ets-funds-container {
+main .section.etf-funds-container {
   max-width: 1172px;
   width: 100%;
   margin: 0 auto;
   padding: 0 24px;
 }
-main .section.ets-funds-container .our-funds-heading {
+main .section.etf-funds-container .our-funds-heading {
   margin-bottom: 35px;
   text-align: center;
 }
-main .section.ets-funds-container .our-funds-heading p {
+main .section.etf-funds-container .our-funds-heading p {
   font-family: Butler-bold;
   color: #2b2e8c;
   font-size: 40px;
@@ -16,15 +16,15 @@ main .section.ets-funds-container .our-funds-heading p {
   line-height: 48px;
   letter-spacing: -0.01em;
 }
-main .section.ets-funds-container .ets-funds-wrapper {
+main .section.etf-funds-container .etf-funds-wrapper {
   padding: 0;
 }
-main .section.ets-funds-container .ets-funds-wrapper .ets-funds {
+main .section.etf-funds-container .etf-funds-wrapper .etf-funds {
   display: flex;
   flex-wrap: wrap;
   gap: 32px;
 }
-main .section.ets-funds-container .ets-funds-wrapper .ets-funds .submain-container {
+main .section.etf-funds-container .etf-funds-wrapper .etf-funds .submain-container {
   position: relative;
   width: 100%;
   flex: 0 0 27.9%;
@@ -37,39 +37,39 @@ main .section.ets-funds-container .ets-funds-wrapper .ets-funds .submain-contain
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 @media (max-width: 1179px) {
-  main .section.ets-funds-container .ets-funds-wrapper .ets-funds .submain-container {
+  main .section.etf-funds-container .etf-funds-wrapper .etf-funds .submain-container {
     flex: 0 0 27.2%;
     max-width: 27.2%;
   }
 }
 @media (max-width: 1025px) {
-  main .section.ets-funds-container .ets-funds-wrapper .ets-funds .submain-container {
+  main .section.etf-funds-container .etf-funds-wrapper .etf-funds .submain-container {
     flex: 0 0 42.2%;
     max-width: 42.2%;
   }
 }
 @media (max-width: 767px) {
-  main .section.ets-funds-container .ets-funds-wrapper .ets-funds .submain-container {
+  main .section.etf-funds-container .etf-funds-wrapper .etf-funds .submain-container {
     flex: unset;
     max-width: 100%;
   }
 }
-main .section.ets-funds-container .ets-funds-wrapper .ets-funds .submain-container .fundCard {
+main .section.etf-funds-container .etf-funds-wrapper .etf-funds .submain-container .fundCard {
   width: 100%;
   margin-bottom: 30px;
 }
-main .section.ets-funds-container .ets-funds-wrapper .ets-funds .submain-container .fundCard .submain-Header .name-content-container {
+main .section.etf-funds-container .etf-funds-wrapper .etf-funds .submain-container .fundCard .submain-Header .name-content-container {
   width: 100%;
   display: flex;
 }
-main .section.ets-funds-container .ets-funds-wrapper .ets-funds .submain-container .fundCard .submain-Header .dropdown-container {
+main .section.etf-funds-container .etf-funds-wrapper .etf-funds .submain-container .fundCard .submain-Header .dropdown-container {
   display: none;
 }
-main .section.ets-funds-container .ets-funds-wrapper .ets-funds .submain-container .fundCard .submain-Header .category-container {
+main .section.etf-funds-container .etf-funds-wrapper .etf-funds .submain-container .fundCard .submain-Header .category-container {
   display: flex;
   justify-content: center;
 }
-main .section.ets-funds-container .ets-funds-wrapper .ets-funds .submain-container .fundCard .submain-Header .category-container .category-item {
+main .section.etf-funds-container .etf-funds-wrapper .etf-funds .submain-container .fundCard .submain-Header .category-container .category-item {
   border-radius: 12px;
   background: transparent;
   padding: 5px;
@@ -82,16 +82,16 @@ main .section.ets-funds-container .ets-funds-wrapper .ets-funds .submain-contain
   line-height: normal;
   text-wrap: nowrap;
 }
-main .section.ets-funds-container .ets-funds-wrapper .ets-funds .submain-container .fundCard .submain-Footer .valueFactor-container .factor-container label,
-main .section.ets-funds-container .ets-funds-wrapper .ets-funds .submain-container .fundCard .submain-Footer .valueFactor-container .factor-container .amuvalue,
-main .section.ets-funds-container .ets-funds-wrapper .ets-funds .submain-container .fundCard .submain-Footer .valueFactor-container .factor-container .cagr-container {
+main .section.etf-funds-container .etf-funds-wrapper .etf-funds .submain-container .fundCard .submain-Footer .valueFactor-container .factor-container label,
+main .section.etf-funds-container .etf-funds-wrapper .etf-funds .submain-container .fundCard .submain-Footer .valueFactor-container .factor-container .amuvalue,
+main .section.etf-funds-container .etf-funds-wrapper .etf-funds .submain-container .fundCard .submain-Footer .valueFactor-container .factor-container .cagr-container {
   display: none;
 }
-main .section.ets-funds-container .ets-funds-wrapper .ets-funds .submain-container .fundCard .submain-Footer .valueFactor-container .factor-container .amu-container {
+main .section.etf-funds-container .etf-funds-wrapper .etf-funds .submain-container .fundCard .submain-Footer .valueFactor-container .factor-container .amu-container {
   display: flex;
   justify-content: space-around;
 }
-main .section.ets-funds-container .ets-funds-wrapper .ets-funds .submain-container .fundCard .submain-Footer .valueFactor-container .buttonFactor-container {
+main .section.etf-funds-container .etf-funds-wrapper .etf-funds .submain-container .fundCard .submain-Footer .valueFactor-container .buttonFactor-container {
   display: flex;
   justify-content: space-around;
 }/*# sourceMappingURL=etf-funds.css.map */
