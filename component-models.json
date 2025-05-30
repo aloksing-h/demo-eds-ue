@@ -476,7 +476,7 @@
     ]
   },
   {
-    "id": "ets-funds",
+    "id": "etf-funds",
     "fields": [
       {
         "component": "richtext",
