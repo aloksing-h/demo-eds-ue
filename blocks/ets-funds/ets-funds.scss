@@ -1,0 +1,103 @@
+main .section.ets-funds-container {
+    max-width: 1172px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 24px;
+
+    .ets-funds-wrapper {
+        padding: 0;
+
+        .ets-funds {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 32px;
+
+            .submain-container {
+                position: relative;
+                width: 100%;
+                flex: 0 0 27.9%;
+                max-width: 27.9%;
+                outline: none;
+                border-radius: 16px;
+                padding: 20px;
+                border: 1px solid #eee;
+                background: #fff;
+                box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+
+                @media (max-width: 1179px) {
+                    flex: 0 0 27.2%;
+                    max-width: 27.2%;
+                }
+
+                @media (max-width: 1025px) {
+                    flex: 0 0 42.2%;
+                    max-width: 42.2%;
+                }
+
+                @media (max-width: 767px) {
+                    flex: unset;
+                    max-width: 100%;
+                }
+
+                .fundCard {
+                    width: 100%;
+                    margin-bottom: 30px;
+
+                    .submain-Header {
+                        .name-content-container {
+                            width: 100%;
+                            display: flex;
+                        }
+
+                        .dropdown-container {
+                            display: none;
+                        }
+
+                        .category-container {
+                            display: flex;
+                            justify-content: center;
+
+                            .category-item {
+                                border-radius: 12px;
+                                background: transparent;
+                                padding: 5px;
+                                align-items: flex-start;
+                                text-align: center;
+                                color: #717171;
+                                font-family: Roboto;
+                                font-size: 11px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: normal;
+                                text-wrap: nowrap;
+                            }
+                        }
+                    }
+
+                    .submain-Footer {
+                        .valueFactor-container {
+                            .factor-container {
+
+                                label,
+                                .amuvalue,
+                                .cagr-container {
+                                    display: none;
+                                }
+
+                                .amu-container {
+                                    display: flex;
+                                    justify-content: space-around;
+                                }
+                            }
+
+                            .buttonFactor-container {
+                                display: flex;
+                                justify-content: space-around;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
