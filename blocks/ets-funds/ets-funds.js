@@ -1,5 +1,13 @@
 import { div, select, option, a, span, img, label } from "../../scripts/dom-helper.js";
+
 export default function decorate(block) {
+    const section = document.querySelector('.section.ets-funds-container');
+    if (section) {
+        const fundHead = section.querySelector('.default-content-wrapper');
+        if (fundHead) {
+            fundHead.classList.add('our-funds-heading');
+        }
+    }
     block.innerHTML = ""
     for (let index = 0; index < 10; index++) {
         let containerData = div({

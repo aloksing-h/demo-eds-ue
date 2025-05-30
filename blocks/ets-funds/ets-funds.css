@@ -4,6 +4,18 @@ main .section.ets-funds-container {
   margin: 0 auto;
   padding: 0 24px;
 }
+main .section.ets-funds-container .our-funds-heading {
+  margin-bottom: 35px;
+  text-align: center;
+}
+main .section.ets-funds-container .our-funds-heading p {
+  font-family: Butler-bold;
+  color: #2b2e8c;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: -0.01em;
+}
 main .section.ets-funds-container .ets-funds-wrapper {
   padding: 0;
 }
@@ -64,9 +76,8 @@ main .section.ets-funds-container .ets-funds-wrapper .ets-funds .submain-contain
   align-items: flex-start;
   text-align: center;
   color: #717171;
-  font-family: Roboto;
+  font-family: Butler-regular;
   font-size: 11px;
-  font-style: normal;
   font-weight: 400;
   line-height: normal;
   text-wrap: nowrap;
