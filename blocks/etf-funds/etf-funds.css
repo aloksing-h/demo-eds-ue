@@ -1,3 +1,9 @@
+a:not([href]):not([class]),
+a:not([href]):not([class]):hover {
+  color: inherit;
+  text-decoration: none;
+}
+
 main .section.etf-funds-container {
   max-width: 1172px;
   width: 100%;
@@ -27,11 +33,10 @@ main .section.etf-funds-container .etf-funds-wrapper .etf-funds {
 main .section.etf-funds-container .etf-funds-wrapper .etf-funds .submain-container {
   position: relative;
   width: 100%;
-  flex: 0 0 27.9%;
-  max-width: 27.9%;
+  flex: 0 0 31.36%;
+  max-width: 31.36%;
   outline: none;
   border-radius: 16px;
-  padding: 20px;
   border: 1px solid #eee;
   background: #fff;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
@@ -55,43 +60,116 @@ main .section.etf-funds-container .etf-funds-wrapper .etf-funds .submain-contain
   }
 }
 main .section.etf-funds-container .etf-funds-wrapper .etf-funds .submain-container .fundCard {
-  width: 100%;
   margin-bottom: 30px;
 }
-main .section.etf-funds-container .etf-funds-wrapper .etf-funds .submain-container .fundCard .submain-Header .name-content-container {
+main .section.etf-funds-container .etf-funds-wrapper .etf-funds .submain-container .fundCard .submain-Header {
+  margin-bottom: 16px;
+  padding: 0 20px;
+}
+main .section.etf-funds-container .etf-funds-wrapper .etf-funds .submain-container .fundCard .submain-Header .title-logo {
   width: 100%;
   display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 7px;
+  padding-top: 15px;
 }
-main .section.etf-funds-container .etf-funds-wrapper .etf-funds .submain-container .fundCard .submain-Header .dropdown-container {
-  display: none;
+main .section.etf-funds-container .etf-funds-wrapper .etf-funds .submain-container .fundCard .submain-Header .title-logo img {
+  width: 40px;
+  height: 40px;
 }
-main .section.etf-funds-container .etf-funds-wrapper .etf-funds .submain-container .fundCard .submain-Header .category-container {
+main .section.etf-funds-container .etf-funds-wrapper .etf-funds .submain-container .fundCard .submain-Header .title-logo h3 {
+  width: auto;
+}
+main .section.etf-funds-container .etf-funds-wrapper .etf-funds .submain-container .fundCard .submain-Header .title-logo h3 a {
+  color: #2b2e8c;
+  font-family: roboto-bold;
+  font-weight: 700;
+  font-size: 16px;
+  margin: 0;
+  padding-top: 0;
+  padding-bottom: 5px;
+  display: block;
+  position: relative;
+  min-height: 64px;
+  line-height: 1.2;
+  cursor: pointer;
+}
+main .section.etf-funds-container .etf-funds-wrapper .etf-funds .submain-container .fundCard .submain-Header .fund-tags {
+  list-style: none;
   display: flex;
-  justify-content: center;
+  align-items: center;
+  padding: 8px 0;
+  margin-left: 40px;
 }
-main .section.etf-funds-container .etf-funds-wrapper .etf-funds .submain-container .fundCard .submain-Header .category-container .category-item {
-  border-radius: 12px;
+main .section.etf-funds-container .etf-funds-wrapper .etf-funds .submain-container .fundCard .submain-Header .fund-tags li {
   background: transparent;
-  padding: 5px;
+  padding: 0 5px;
   align-items: flex-start;
   text-align: center;
   color: #717171;
-  font-family: Butler-regular;
+  font-family: Roboto;
   font-size: 11px;
+  font-style: normal;
   font-weight: 400;
   line-height: normal;
   text-wrap: nowrap;
+  border-right: 1px solid #717171;
 }
-main .section.etf-funds-container .etf-funds-wrapper .etf-funds .submain-container .fundCard .submain-Footer .valueFactor-container .factor-container label,
-main .section.etf-funds-container .etf-funds-wrapper .etf-funds .submain-container .fundCard .submain-Footer .valueFactor-container .factor-container .amuvalue,
-main .section.etf-funds-container .etf-funds-wrapper .etf-funds .submain-container .fundCard .submain-Footer .valueFactor-container .factor-container .cagr-container {
-  display: none;
+main .section.etf-funds-container .etf-funds-wrapper .etf-funds .submain-container .fundCard .submain-Footer {
+  padding: 0 20px;
 }
-main .section.etf-funds-container .etf-funds-wrapper .etf-funds .submain-container .fundCard .submain-Footer .valueFactor-container .factor-container .amu-container {
+main .section.etf-funds-container .etf-funds-wrapper .etf-funds .submain-container .fundCard .submain-Footer .fund-data {
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  min-height: 125px;
+  justify-content: space-between;
 }
-main .section.etf-funds-container .etf-funds-wrapper .etf-funds .submain-container .fundCard .submain-Footer .valueFactor-container .buttonFactor-container {
+main .section.etf-funds-container .etf-funds-wrapper .etf-funds .submain-container .fundCard .submain-Footer .fund-data .fund-data-content {
+  flex: 0 0 50%;
+  max-width: 44%;
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  padding-right: 15px;
+}
+main .section.etf-funds-container .etf-funds-wrapper .etf-funds .submain-container .fundCard .submain-Footer .fund-data .fund-data-content h3 {
+  color: #42526e;
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+}
+main .section.etf-funds-container .etf-funds-wrapper .etf-funds .submain-container .fundCard .submain-Footer .fund-data .fund-data-content .nav-value {
+  color: #182a4e;
+  font-family: Roboto;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+}
+main .section.etf-funds-container .etf-funds-wrapper .etf-funds .submain-container .fundCard .submain-Footer .fund-data .fund-data-content span {
+  color: #182a4e;
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  padding-right: 10px;
+}
+main .section.etf-funds-container .etf-funds-wrapper .etf-funds .submain-container .fundCard .submain-Footer .fund-data-button {
+  width: 100%;
+  text-align: center;
+}
+main .section.etf-funds-container .etf-funds-wrapper .etf-funds .submain-container .fundCard .submain-Footer .fund-data-button .know-more-btn {
+  border: 1px solid #d3d7dd;
+  background-color: #fff !important;
+  color: #42526e !important;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 0.5rem 1.35rem;
+  border-radius: 8px;
+  text-align: center;
+  white-space: nowrap;
 }/*# sourceMappingURL=etf-funds.css.map */

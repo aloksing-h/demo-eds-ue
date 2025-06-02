@@ -244,6 +244,12 @@ button.secondary {
   color: var(--text-color);
 }
 
+a:not([href]):not([class]),
+a:not([href]):not([class]):hover {
+  color: inherit;
+  text-decoration: none;
+}
+
 main img {
   max-width: 100%;
   width: auto;
@@ -394,3 +400,84 @@ main>.section.tab-section {
 }
 
 /* tab-section css start */
+
+/* why-exchange-trand-css-start */
+.section.why-exchange-traded {
+  width: 100%;
+}
+
+.why-exchange-traded .default-content-wrapper {
+  width: 100%;
+}
+
+.why-exchange-traded .default-content-wrapper h3 {
+  font-family: Butler-bold;
+  color: #2b2e8c;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: -.01em;
+  margin: 35px 0;
+  text-align: center;
+}
+
+.why-exchange-traded .default-content-wrapper ul {
+  list-style: none;
+  list-style-type: none;
+  text-align: center;
+  max-width: 980px;
+  min-height: 225px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.why-exchange-traded .default-content-wrapper ul li {
+  display: inline-table;
+  margin-left: 4%;
+  vertical-align: middle;
+  position: relative;
+  width: 150px;
+  height: 160px;
+  background-color: #fff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, .2);
+  z-index: 22;
+}
+
+.why-exchange-traded .default-content-wrapper ul li:first-child {
+  margin-left: 0;
+}
+
+.why-exchange-traded .default-content-wrapper ul::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  width: 81%;
+  left: 13%;
+  height: 5px;
+  border-bottom: 1px dashed #fb4d4d;
+  z-index: -1;
+  top: 35%;
+}
+
+.why-exchange-traded .default-content-wrapper ul li a {
+  font-size: 13px;
+  color: #21295a;
+  font-family: Roboto;
+  font-weight: 500;
+  margin: 7px 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10px;
+  gap: 10px;
+  height: 100%;
+}
+
+.why-exchange-traded .default-content-wrapper ul li a .icon img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* why-exchange-trand-css-end */

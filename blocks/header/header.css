@@ -8,12 +8,13 @@ header .header {
   justify-content: center;
 }
 header .nav-wrapper {
+  max-width: 100%;
   width: 100%;
   position: fixed;
   top: 0;
-  background-color: var(--background-color);
-  padding: 20px;
-  z-index: 2;
+  background-color: bisque;
+  padding: 20px 0;
+  z-index: 99;
 }
 header nav {
   position: relative;

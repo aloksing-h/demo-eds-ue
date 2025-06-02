@@ -168,6 +168,10 @@
           {
             "name": "ETF FUNDS",
             "value": "etf-funds"
+          },
+          {
+            "name": "Hero Banner",
+            "value": "hero-banner"
           }
         ]
       }

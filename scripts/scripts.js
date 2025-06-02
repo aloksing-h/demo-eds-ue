@@ -199,3 +199,15 @@ async function loadPage() {
 }
 
 loadPage();
+
+// const section = document.querySelector('.section.why-exchange-traded');
+// console.log(section);
+
+// if (section) {
+//   section.classList.add('why-exchange-trand');
+//   const fundHd = section.querySelector('.default-content-wrapper');
+//   if (fundHd) {
+//     fundHd.classList.add('etf-funds-1213');
+//     console.log(fundHd);
+//   }
+// }
