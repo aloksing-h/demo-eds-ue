@@ -16775,14 +16775,18 @@ const collectionNode = {
 };
 
 export default function decorate(block) {
-    const section = document.querySelector('.section.etf-funds-container');
-    if (section) {
-        const fundHead = section.querySelector('.default-content-wrapper');
-        if (fundHead) {
-            fundHead.classList.add('our-funds-heading');
-        }
+    const container = document.querySelector('.section.etf-funds-container');
+    if (!container) return;
+
+    const contentBlocks = container.querySelectorAll(':scope > .default-content-wrapper');
+    if (contentBlocks[0]) {
+        contentBlocks[0].classList.add('our-funds-heading');
     }
-    block.innerHTML = ""
+    if (contentBlocks[1]) {
+        contentBlocks[1].classList.add('our-funds-description');
+    }
+
+    block.innerHTML = "";
 
     // gettig all schemes from collection node
     const etfTYpe = collectionNode.data.fundType.filter((type) => {

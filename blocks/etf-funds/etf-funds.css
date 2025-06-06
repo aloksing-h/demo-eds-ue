@@ -116,6 +116,9 @@ main .section.etf-funds-container .etf-funds-wrapper .etf-funds .submain-contain
   text-wrap: nowrap;
   border-right: 1px solid #717171;
 }
+main .section.etf-funds-container .etf-funds-wrapper .etf-funds .submain-container .fundCard .submain-Header .fund-tags li:last-child {
+  border: none;
+}
 main .section.etf-funds-container .etf-funds-wrapper .etf-funds .submain-container .fundCard .submain-Footer {
   padding: 0 20px;
 }
@@ -172,4 +175,39 @@ main .section.etf-funds-container .etf-funds-wrapper .etf-funds .submain-contain
   border-radius: 8px;
   text-align: center;
   white-space: nowrap;
+}
+main .section.etf-funds-container .our-funds-description {
+  margin-top: 40px;
+  padding: 0;
+  padding-left: 20px;
+  line-height: 1.5;
+  color: #3c434f;
+  -webkit-font-smoothing: antialiased;
+}
+main .section.etf-funds-container .our-funds-description > p {
+  font-family: Butler-bold;
+  font-size: 14px;
+  font-weight: 700;
+}
+main .section.etf-funds-container .our-funds-description ul {
+  padding-left: 20px;
+}
+main .section.etf-funds-container .our-funds-description ul li {
+  font-family: Butler-bold;
+  font-size: 14px;
+  font-weight: 700;
+}
+main .section.etf-funds-container .our-funds-description .button-container a {
+  color: rgb(10, 145, 242);
+  padding: 0;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  background-color: transparent;
+  margin: 0;
+  border: none;
+  border-radius: unset;
+  font-size: 14px;
+  font-family: Work Sans;
+  font-weight: 600;
+  line-height: unset;
 }/*# sourceMappingURL=etf-funds.css.map */

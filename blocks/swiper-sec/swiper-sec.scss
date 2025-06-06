@@ -224,3 +224,23 @@ main>.section.swiper-sec-container>div {
 //   width: 100%;
 //   height: 410px;
 // }
+main>.section.swiper-sec-container.hero-banner {
+  padding: 0;
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+
+  .swiper-sec-wrapper {
+    .swiper-sec {
+      .swiper-wrapper {
+        .swiper-slide {
+          gap: unset;
+        }
+      }
+      .swiper-pagination {
+        display: none;
+      }
+    }
+  }
+}
