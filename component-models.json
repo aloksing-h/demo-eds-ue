@@ -490,5 +490,17 @@
         "valueType": "string"
       }
     ]
+  },
+  {
+    "id": "etf-net-asset-value",
+    "fields": [
+      {
+        "component": "richtext",
+        "name": "text",
+        "value": "",
+        "label": "Text",
+        "valueType": "string"
+      }
+    ]
   }
 ]
