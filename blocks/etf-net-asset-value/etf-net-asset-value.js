@@ -1,4 +1,4 @@
-import { div, select, option, a, span, img, label, h3, ul, li, table } from "../../scripts/dom-helper.js";
+import { div, select, option, a, span, img, label, h3, ul, li, table, tr, td, th } from "../../scripts/dom-helper.js";
 
 
 const EtfFund = {
@@ -430,13 +430,29 @@ const EtfFund = {
 export default function decorate(block) {
     const container = document.querySelector('.section.etf-net-asset-value-container');
     if (!container) return;
+    console.log(container);
+
 
     // Add classes to the first two content blocks
     const contentBlocks = container.querySelectorAll(':scope > .default-content-wrapper');
     if (contentBlocks[0]) contentBlocks[0].classList.add('etf-funds-heading');
-    if (contentBlocks[1]) contentBlocks[1].classList.add('etf-funds-description');
+    // if (contentBlocks[1]) contentBlocks[1].classList.add('etf-funds-description');
+    const etf = EtfFund.data.m50M100Data;
+    const table = document.createElement("table");
+    
 
-    block.innerHTML = "";
+    etf.forEach(e => {
+        const a = document.createElement("thead")
+        a.innerHTML = `
+    <td>${e.secname}</td>
+    <td>${e.navPerChange}</td>
+    <td>${e.currNavDate}</td>
+    <td>${e.navChange}</td>    
+    <td>${e.schemeNameFull}</td>`;
+        table.appendChild(a)
+    })
+    block.appendChild(table)
+
 }
 
 
