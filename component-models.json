@@ -502,5 +502,45 @@
         "valueType": "string"
       }
     ]
+  },
+   {
+    "id": "hero-carousel",
+    "fields": [
+      {
+        "component": "multiselect",
+        "name": "classes",
+        "label": "Style",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Hero Carousel Class Name",
+            "children": [
+              {
+                "name": "hero-bnr",
+                "value": "hero-bnr"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "component": "reference",
+        "name": "image",
+        "label": "Image",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "name": "imageAlt",
+        "label": "Alt Text"
+      },
+      {
+        "component": "richtext",
+        "name": "text",
+        "value": "",
+        "label": "Hero Carousel Structure",
+        "valueType": "string"
+      }
+    ]
   }
 ]

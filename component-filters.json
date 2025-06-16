@@ -24,7 +24,8 @@
       "header-sub-block",
       "header-sub",
       "etf-funds",
-      "etf-net-asset-value"
+      "etf-net-asset-value",
+      "hero-carousel"
     ]
   },
   {
@@ -46,5 +47,9 @@
   {
     "id": "swiper-sec",
     "components": ["swiper-sec-item"]
+  },
+  {
+    "id": "hero-carousel",
+    "components": ["hero-carousel-item"]
   }
 ]
