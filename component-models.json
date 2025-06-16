@@ -510,7 +510,6 @@
         "component": "multiselect",
         "name": "classes",
         "label": "Style",
-        "valueType": "string",
         "options": [
           {
             "name": "Hero Carousel Class Name",
