@@ -524,6 +524,16 @@
         ]
       },
       {
+        "component": "aem-content",
+        "name": "link",
+        "label": "Link"
+      },
+      {
+        "component": "text",
+        "name": "linkText",
+        "label": "Text"
+      },
+      {
         "component": "reference",
         "name": "image",
         "label": "Image",
