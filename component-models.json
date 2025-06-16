@@ -503,8 +503,8 @@
       }
     ]
   },
-   {
-    "id": "hero-carousel",
+  {
+    "id": "hero-carousel-item",
     "fields": [
       {
         "component": "multiselect",
