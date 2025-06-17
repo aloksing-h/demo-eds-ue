@@ -551,5 +551,43 @@
         "valueType": "string"
       }
     ]
+  },
+  {
+    "id": "banner-flexicap",
+    "fields": [
+      {
+        "component": "multiselect",
+        "name": "classes",
+        "label": "Style",
+        "options": [
+          {
+            "name": "Hero Carousel Class Name",
+            "children": [
+              {
+                "name": "banner-flexicap-section",
+                "value": "Banner Flexicap Section"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "component": "richtext",
+        "name": "text",
+        "value": "",
+        "label": "Bnr Flexicap",
+        "valueType": "string"
+      },
+      {
+        "component": "aem-content",
+        "name": "link",
+        "label": "Link"
+      },
+      {
+        "component": "text",
+        "name": "linkText",
+        "label": "Text"
+      }
+    ]
   }
 ]
