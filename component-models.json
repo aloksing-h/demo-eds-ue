@@ -593,5 +593,17 @@
         "label": "Text"
       }
     ]
+  },
+  {
+    "id": "flexicap-cf",
+    "fields": [
+      {
+        "component": "richtext",
+        "name": "text",
+        "value": "",
+        "label": "Text",
+        "valueType": "string"
+      }
+    ]
   }
 ]
