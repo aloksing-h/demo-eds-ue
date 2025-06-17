@@ -1,0 +1,16 @@
+main > .section {
+  margin: 0;
+}
+main > .section.banner-flexicap-container {
+  display: flex;
+  flex-direction: column;
+  background-image: url(/icons/flexicap-fund-desk.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+main > .section .banner-flexicap-wrapper {
+  max-width: 1172px;
+  width: 100%;
+  margin: 0 auto;
+}/*# sourceMappingURL=banner-flexicap.css.map */

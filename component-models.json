@@ -138,6 +138,10 @@
             "value": "highlight"
           },
           {
+            "name": "flexi-banner-wrp",
+            "value": "flexi-banner-wrp"
+          },
+          {
             "name": "Accordion",
             "value": "accordion"
           },
