@@ -1,12 +1,15 @@
+// import Swiper from "../swiper-sec/swiper-bundle.min.js";
+import swiperBundleMin from "../swiper-sec/swiper-bundle.min.js";
+
 export default function decorate(block) {
-    Array.from(block.children).forEach((row, rowIndex) => {
-        row.classList.add("find-us-container");
-        row.classList.add(`sec-${rowIndex + 1}`);
-        Array.from(row.children).forEach((column, colIndex) => {
-            column.classList.add("find-us-container-column");
-            column.classList.add(`sebtxt-${colIndex + 1}`);
-        });
-    });
+    // Array.from(block.children).forEach((row, rowIndex) => {
+    //     row.classList.add("find-us-container");
+    //     row.classList.add(`sec-${rowIndex + 1}`);
+    //     // Array.from(row.children).forEach((column, colIndex) => {
+    //     //     column.classList.add("find-us-container-column");
+    //     //     column.classList.add(`sebtxt-${colIndex + 1}`);
+    //     // });
+    // });
 
     const listBlocks = block.querySelectorAll(".find-us-container-column ul");
     listBlocks.forEach((ul, index) => {
