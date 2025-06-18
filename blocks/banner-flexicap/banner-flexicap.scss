@@ -1,61 +1,282 @@
-// main>.section {
-//     margin: 0;
+main>.section {
+    margin: 0;
 
-//     &.banner-flexicap-container {
-//         display: flex;
-//         flex-direction: column;
-//         background-image: url(/icons/flexicap-fund-desk.jpg);
-//         background-size: cover;
-//         background-repeat: no-repeat;
-//         background-position: 50%;
-//     }
+    ul {
+        list-style: none;
+    }
 
-//     .banner-flexicap-wrapper {
-//         max-width: 1172px;
-//         width: 100%;
-//         margin: 0 auto;
-//         padding: 0;
+    &.banner-flexicap-container {
+        display: flex;
+        flex-direction: column;
+        background-image: url(/icons/flexicap-fund-desk.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50%;
+    }
 
-//         .banner-flexicap {
-//             .flexicap-fund {
-//                 &.sec-1 {
-//                     >div {
-//                         width: 100%;
+    .banner-flexicap-wrapper {
+        max-width: 1172px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
 
-//                         h3 {
-//                             color: #2B2E8C;
-//                             font-family: Butler, Work Sans, sans-serif;
-//                             font-weight: 600;
-//                             font-size: 56px;
-//                             line-height: 75px;
-//                         }
-//                         h1{
-//                             color: #2B2E8C;
-//                             font-size: 28px;
-//                             line-height: 36px;
-//                             text-transform: capitalize;
-//                         }
-//                     }
+        .banner-flexicap {
+            .flexicap-fund {
+                margin-top: 2.25rem;
 
-//                     ul>li>ul {
-//                         display: none;
-//                     }
-//                 }
+                &.sec-1 {
+                    >div {
+                        width: 100%;
 
-//                 &.sec-2 {
-//                     .flexi-banner-wrp {
-//                         .default-content-wrapper {
-//                             display: flex;
+                        h3 {
+                            color: #2B2E8C;
+                            font-family: Butler, Work Sans, sans-serif;
+                            font-weight: 600;
+                            font-size: 56px;
+                            line-height: 75px;
+                        }
 
-//                             ul {
-//                                 ul {
-//                                     display: none;
-//                                 }
-//                             }
-//                         }
-//                     }
-//                 }
-//             }
-//         }
-//     }
-// }
+                        h1 {
+                            color: #2B2E8C;
+                            font-size: 28px;
+                            line-height: 36px;
+                            text-transform: capitalize;
+                        }
+                    }
+
+                    ul>li>ul {
+                        display: none;
+                    }
+
+                    .flexicap-fund-ul-1 {
+                        margin-top: .75rem;
+                        margin-bottom: 40px;
+                        margin-left: 2px;
+                        // padding-bottom: 10px;
+                        align-items: center;
+                        gap: 12px;
+                        display: flex;
+                        flex-wrap: wrap;
+                        // margin-right: -15px;
+
+                        .flexicap-list-1 {
+                            p {
+                                display: flex;
+                                gap: 10px;
+                                align-items: center;
+                                appearance: none;
+                                border-radius: 28px;
+                                font-family: Work Sans;
+                                font-size: 18px;
+                                font-style: normal;
+                                font-weight: 700;
+                                line-height: 21px;
+                                border: none;
+                                text-align: left;
+                                padding: 4px 2px 4px 0;
+                                color: #000;
+                                background: url(/assets/images/arrow_drop_down_white.svg) 76% 61% / 16px no-repeat;
+
+                                &::after {
+                                    content: "";
+                                    background-image: url(/icons/arrow-down-black.svg);
+                                    background-repeat: no-repeat;
+                                    background-position: center;
+                                    background-size: 100%;
+                                    display: flex;
+                                    width: 20px;
+                                    height: 20px;
+                                    justify-content: center;
+                                    align-items: center;
+                                    flex-shrink: 0;
+                                }
+                            }
+                        }
+                    }
+
+                    .button-container {
+                        margin-bottom: 70px;
+                        margin-top: .75rem;
+
+                        .button {
+                            margin: 0;
+                            padding: 0;
+                            font-style: normal;
+                            font-weight: 600;
+                            line-height: normal;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            color: #fff;
+                            font-family: Work Sans;
+                            font-size: 18px;
+                            background: #2b2e8c;
+                            border-radius: 8px;
+                            border: solid #2b2e8c;
+                            padding: 0;
+                            cursor: pointer;
+                            height: 50px;
+                            width: 200px;
+                        }
+                    }
+                }
+
+                &.sec-2 {
+                    max-width: 1172px;
+                    width: 100%;
+                    margin: 0 auto;
+                    background-color: #ffcf00;
+                    padding: 7px 0;
+
+                    .flexicap-fund-column {
+                        &.subtxt-1 {
+                            display: flex;
+                            align-items: center;
+                            flex-wrap: nowrap;
+                            gap: 0.5rem;
+
+                            .flexicap-fund-ul-3 {
+                                display: flex;
+                                flex: 0 0 58%;
+                                max-width: 58%;
+                                padding-left: 20px;
+                                align-items: center;
+                                gap: 5px;
+                                height: 38px;
+
+                                li {
+                                    color: #3c434f;
+                                    font-family: 'roboto-regular';
+                                    font-size: 16px;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    line-height: 20px;
+                                }
+
+                                .flexicap-list-8 {
+                                    color: #3c434f;
+                                    font-family: 'roboto-medium';
+                                    font-size: 16px;
+                                    font-style: normal;
+                                    font-weight: 500;
+                                    line-height: 20px;
+                                }
+
+                                .flexicap-list-9 {
+                                    padding-left: 10px;
+
+                                    p {
+                                        display: flex;
+                                        white-space: nowrap;
+                                        align-items: center;
+
+                                        &::after {
+                                            content: "";
+                                            display: block;
+                                            appearance: none;
+                                            border-radius: 28px;
+                                            background-image: url(/icons/arrow_drop_down.svg);
+                                            background-repeat: no-repeat;
+                                            background-position: 90% 70%;
+                                            background-size: 35px;
+                                            background-color: transparent;
+                                            font-family: roboto-medium;
+                                            font-size: 14px;
+                                            font-weight: 500;
+                                            border: none;
+                                            text-align: left;
+                                            color: #000;
+                                            padding-left: 34px;
+                                            padding-top: 24px;
+                                            padding-bottom: 0;
+                                        }
+                                    }
+
+                                    .flexicap-fund-ul-4 {
+                                        display: none;
+                                    }
+                                }
+
+                                .flexicap-list-14 {
+                                    padding-left: 15px;
+                                }
+
+                                .flexicap-list-15 {
+                                    font-size: 16px;
+                                    font-weight: 500;
+                                    line-height: 20px;
+                                    color: #3c434f;
+                                    font-family: 'roboto-medium';
+                                    font-style: normal;
+                                }
+
+                                .flexicap-list-16 {
+                                    color: #3c434f;
+                                    font-family: 'roboto-medium';
+                                    font-size: 12px;
+                                    font-style: normal;
+                                    font-weight: 500;
+                                    line-height: 16px;
+                                }
+                            }
+
+                        }
+
+                        .contact-links {
+                            display: flex;
+                            flex: 0 0 38%;
+                            max-width: 38%;
+                            position: relative;
+                            width: 100%;
+                            padding-right: 15px;
+                            justify-content: flex-end;
+                            gap: 15px;
+
+                            >p {
+                                display: flex;
+                                color: #2B2E8C;
+                                padding: 0.25rem 1rem;
+                                line-height: 1.25rem;
+                                font-size: 14px;
+                                background-color: rgb(255 255 255);
+                                border-radius: .5rem;
+                                gap: .5rem;
+                                align-items: center;
+
+                                &::after {
+                                    content: "";
+                                    background-image: url(/icons/arrow-right-black.svg);
+                                    background-repeat: no-repeat;
+                                    background-position: center;
+                                    background-size: 100%;
+                                    display: flex;
+                                    width: 15px;
+                                    height: 15px;
+                                    justify-content: center;
+                                    align-items: center;
+                                    flex-shrink: 0;
+                                }
+                            }
+
+                            .flexicap-fund-ul-5 {
+                                display: flex;
+                                color: #2B2E8C;
+                                padding: 0.25rem 1rem;
+                                line-height: 1.25rem;
+                                font-size: 14px;
+                                background-color: rgb(255 255 255);
+                                border-radius: .5rem;
+                                gap: .5rem;
+                                align-items: center;
+
+                                .flexicap-fund-ul-6 {
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
