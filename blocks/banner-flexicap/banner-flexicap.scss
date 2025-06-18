@@ -14,13 +14,48 @@ main>.section {
         max-width: 1172px;
         width: 100%;
         margin: 0 auto;
+        padding: 0;
 
-        // .banner-flexicap {
-        //     .flexicap-fund {
-        //         &.sec-1 {}
+        .banner-flexicap {
+            .flexicap-fund {
+                &.sec-1 {
+                    >div {
+                        width: 100%;
 
-        //         &.sec-2 {}
-        //     }
-        // }
+                        h3 {
+                            color: #2B2E8C;
+                            font-family: Butler, Work Sans, sans-serif;
+                            font-weight: 600;
+                            font-size: 56px;
+                            line-height: 75px;
+                        }
+                        h1{
+                            color: #2B2E8C;
+                            font-size: 28px;
+                            line-height: 36px;
+                            text-transform: capitalize;
+                        }
+                    }
+
+                    ul>li>ul {
+                        display: none;
+                    }
+                }
+
+                &.sec-2 {
+                    .flexi-banner-wrp {
+                        .default-content-wrapper {
+                            display: flex;
+
+                            ul {
+                                ul {
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }

@@ -583,6 +583,13 @@
         "valueType": "string"
       },
       {
+        "component": "richtext",
+        "name": "text_two",
+        "value": "",
+        "label": "Bnr Flexicap two",
+        "valueType": "string"
+      },
+      {
         "component": "aem-content",
         "name": "link",
         "label": "Link"
@@ -591,18 +598,6 @@
         "component": "text",
         "name": "linkText",
         "label": "Text"
-      }
-    ]
-  },
-  {
-    "id": "flexicap-cf",
-    "fields": [
-      {
-        "component": "richtext",
-        "name": "text",
-        "value": "",
-        "label": "Text",
-        "valueType": "string"
       }
     ]
   }
