@@ -588,16 +588,6 @@
         "value": "",
         "label": "two Bnr Flexicap",
         "valueType": "string"
-      },
-      {
-        "component": "aem-content",
-        "name": "col2_link",
-        "label": "Link"
-      },
-      {
-        "component": "text",
-        "name": "col2_linkText",
-        "label": "Text"
       }
     ]
   }
