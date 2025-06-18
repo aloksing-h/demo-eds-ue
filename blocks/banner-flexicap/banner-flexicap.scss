@@ -1,61 +1,61 @@
-main>.section {
-    margin: 0;
+// main>.section {
+//     margin: 0;
 
-    &.banner-flexicap-container {
-        display: flex;
-        flex-direction: column;
-        background-image: url(/icons/flexicap-fund-desk.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: 50%;
-    }
+//     &.banner-flexicap-container {
+//         display: flex;
+//         flex-direction: column;
+//         background-image: url(/icons/flexicap-fund-desk.jpg);
+//         background-size: cover;
+//         background-repeat: no-repeat;
+//         background-position: 50%;
+//     }
 
-    .banner-flexicap-wrapper {
-        max-width: 1172px;
-        width: 100%;
-        margin: 0 auto;
-        padding: 0;
+//     .banner-flexicap-wrapper {
+//         max-width: 1172px;
+//         width: 100%;
+//         margin: 0 auto;
+//         padding: 0;
 
-        .banner-flexicap {
-            .flexicap-fund {
-                &.sec-1 {
-                    >div {
-                        width: 100%;
+//         .banner-flexicap {
+//             .flexicap-fund {
+//                 &.sec-1 {
+//                     >div {
+//                         width: 100%;
 
-                        h3 {
-                            color: #2B2E8C;
-                            font-family: Butler, Work Sans, sans-serif;
-                            font-weight: 600;
-                            font-size: 56px;
-                            line-height: 75px;
-                        }
-                        h1{
-                            color: #2B2E8C;
-                            font-size: 28px;
-                            line-height: 36px;
-                            text-transform: capitalize;
-                        }
-                    }
+//                         h3 {
+//                             color: #2B2E8C;
+//                             font-family: Butler, Work Sans, sans-serif;
+//                             font-weight: 600;
+//                             font-size: 56px;
+//                             line-height: 75px;
+//                         }
+//                         h1{
+//                             color: #2B2E8C;
+//                             font-size: 28px;
+//                             line-height: 36px;
+//                             text-transform: capitalize;
+//                         }
+//                     }
 
-                    ul>li>ul {
-                        display: none;
-                    }
-                }
+//                     ul>li>ul {
+//                         display: none;
+//                     }
+//                 }
 
-                &.sec-2 {
-                    .flexi-banner-wrp {
-                        .default-content-wrapper {
-                            display: flex;
+//                 &.sec-2 {
+//                     .flexi-banner-wrp {
+//                         .default-content-wrapper {
+//                             display: flex;
 
-                            ul {
-                                ul {
-                                    display: none;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
+//                             ul {
+//                                 ul {
+//                                     display: none;
+//                                 }
+//                             }
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }

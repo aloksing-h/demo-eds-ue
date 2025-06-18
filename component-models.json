@@ -577,26 +577,26 @@
       },
       {
         "component": "richtext",
-        "name": "text",
+        "name": "col1_text",
         "value": "",
         "label": "Bnr Flexicap",
         "valueType": "string"
       },
       {
         "component": "richtext",
-        "name": "text_two",
+        "name": "col2_text",
         "value": "",
-        "label": "Bnr Flexicap two",
+        "label": "two Bnr Flexicap",
         "valueType": "string"
       },
       {
         "component": "aem-content",
-        "name": "link",
+        "name": "col2_link",
         "label": "Link"
       },
       {
         "component": "text",
-        "name": "linkText",
+        "name": "col2_linkText",
         "label": "Text"
       }
     ]
