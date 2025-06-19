@@ -588,6 +588,16 @@
         "value": "",
         "label": "two Bnr Flexicap",
         "valueType": "string"
+      },
+      {
+        "component": "aem-content",
+        "name": "link",
+        "label": "Link"
+      },
+      {
+        "component": "text",
+        "name": "linkText",
+        "label": "Text"
       }
     ]
   },
@@ -623,16 +633,6 @@
         "value": "",
         "label": "Flexicap modal",
         "valueType": "string"
-      },
-      {
-        "component": "aem-content",
-        "name": "link",
-        "label": "Link"
-      },
-      {
-        "component": "text",
-        "name": "linkText",
-        "label": "Text"
       }
     ]
   }
