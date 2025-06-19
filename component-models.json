@@ -595,6 +595,12 @@
     "id": "flexicap-form",
     "fields": [
       {
+        "component": "text",
+        "valueType": "string",
+        "name": "jcr:title",
+        "label": "Title"
+      },
+      {
         "component": "reference",
         "name": "image",
         "label": "Image",
@@ -604,6 +610,12 @@
         "component": "text",
         "name": "imageAlt",
         "label": "Alt Text"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "jcr:description",
+        "label": "Description"
       },
       {
         "component": "richtext",
