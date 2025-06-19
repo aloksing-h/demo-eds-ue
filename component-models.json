@@ -616,13 +616,6 @@
         "valueType": "string",
         "name": "from-title",
         "label": "Description"
-      },
-      {
-        "component": "richtext",
-        "name": "text",
-        "value": "",
-        "label": "Flexicap modal",
-        "valueType": "string"
       }
     ]
   }

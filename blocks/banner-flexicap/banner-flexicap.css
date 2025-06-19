@@ -227,11 +227,10 @@ main > .section .banner-flexicap-wrapper .banner-flexicap .flexicap-fund.sec-2 .
   justify-content: flex-end;
   gap: 15px;
 }
-main > .section .banner-flexicap-wrapper .banner-flexicap .flexicap-fund.sec-2 .flexicap-fund-column .contact-links > p {
+main > .section .banner-flexicap-wrapper .banner-flexicap .flexicap-fund.sec-2 .flexicap-fund-column .contact-links > .button-container {
   display: flex;
   padding: 0.25rem 1rem;
   line-height: 1.25rem;
-  font-size: 14px;
   background-color: rgb(255, 255, 255);
   border-radius: 0.5rem;
   gap: 0.5rem;
@@ -243,7 +242,7 @@ main > .section .banner-flexicap-wrapper .banner-flexicap .flexicap-fund.sec-2 .
   line-height: 16px;
   cursor: pointer;
 }
-main > .section .banner-flexicap-wrapper .banner-flexicap .flexicap-fund.sec-2 .flexicap-fund-column .contact-links > p::after {
+main > .section .banner-flexicap-wrapper .banner-flexicap .flexicap-fund.sec-2 .flexicap-fund-column .contact-links > .button-container::after {
   content: "";
   background-image: url(/icons/arrow-right-black.svg);
   background-repeat: no-repeat;
@@ -255,6 +254,17 @@ main > .section .banner-flexicap-wrapper .banner-flexicap .flexicap-fund.sec-2 .
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
+}
+main > .section .banner-flexicap-wrapper .banner-flexicap .flexicap-fund.sec-2 .flexicap-fund-column .contact-links > .button-container .button {
+  margin: 0;
+  padding: 0;
+  color: #3c434f;
+  font-family: "roboto-regular";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  cursor: pointer;
+  background-color: transparent;
 }
 main > .section .banner-flexicap-wrapper .banner-flexicap .flexicap-fund.sec-2 .flexicap-fund-column .contact-links .flexicap-fund-ul-5 {
   display: flex;

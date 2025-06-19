@@ -256,11 +256,10 @@ main>.section {
                             justify-content: flex-end;
                             gap: 15px;
 
-                            >p {
+                            >.button-container {
                                 display: flex;
                                 padding: 0.25rem 1rem;
                                 line-height: 1.25rem;
-                                font-size: 14px;
                                 background-color: rgb(255 255 255);
                                 border-radius: .5rem;
                                 gap: .5rem;
@@ -284,6 +283,18 @@ main>.section {
                                     justify-content: center;
                                     align-items: center;
                                     flex-shrink: 0;
+                                }
+
+                                .button {
+                                    margin: 0;
+                                    padding: 0;
+                                    color: #3c434f;
+                                    font-family: 'roboto-regular';
+                                    font-size: 14px;
+                                    font-weight: 400;
+                                    line-height: 16px;
+                                    cursor: pointer;
+                                    background-color: transparent;
                                 }
                             }
 
