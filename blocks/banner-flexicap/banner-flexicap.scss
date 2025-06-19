@@ -30,7 +30,7 @@ main>.section {
 
                         h3 {
                             color: #2B2E8C;
-                            font-family: Butler, Work Sans, sans-serif;
+                            font-family: 'Butler-SemiBold';
                             font-weight: 600;
                             font-size: 56px;
                             line-height: 75px;
@@ -60,13 +60,15 @@ main>.section {
                         // margin-right: -15px;
 
                         .flexicap-list-1 {
+                            position: relative;
+
                             p {
                                 display: flex;
                                 gap: 10px;
                                 align-items: center;
                                 appearance: none;
                                 border-radius: 28px;
-                                font-family: Work Sans;
+                                font-family: 'Butler-bold';
                                 font-size: 18px;
                                 font-style: normal;
                                 font-weight: 700;
@@ -76,19 +78,41 @@ main>.section {
                                 padding: 4px 2px 4px 0;
                                 color: #000;
                                 background: url(/assets/images/arrow_drop_down_white.svg) 76% 61% / 16px no-repeat;
+                                cursor: pointer;
 
                                 &::after {
                                     content: "";
-                                    background-image: url(/icons/arrow-down-black.svg);
+                                    background-image: url(/icons/arrow_drop_down.svg);
                                     background-repeat: no-repeat;
                                     background-position: center;
                                     background-size: 100%;
                                     display: flex;
-                                    width: 20px;
+                                    width: 30px;
                                     height: 20px;
                                     justify-content: center;
                                     align-items: center;
                                     flex-shrink: 0;
+                                }
+                            }
+
+                            .flexicap-fund-ul-2 {
+                                background-color: #8f8a8a;
+                                border-radius: 8px;
+                                padding: 11px;
+                                min-width: 350px;
+                                position: absolute;
+                                top: 35px;
+
+                                li {
+                                    color: #2B2E8C;
+                                    font-family: 'roboto-medium';
+                                    font-size: 16px;
+                                    font-weight: 500;
+                                    line-height: 20px;
+
+                                    &:hover {
+                                        background-color: rgb(208, 232, 255);
+                                    }
                                 }
                             }
                         }
@@ -101,15 +125,14 @@ main>.section {
                         .button {
                             margin: 0;
                             padding: 0;
-                            font-style: normal;
-                            font-weight: 600;
+                            font-family: 'roboto-medium';
+                            font-size: 18px;
+                            font-weight: 500;
                             line-height: normal;
                             display: flex;
                             justify-content: center;
                             align-items: center;
                             color: #fff;
-                            font-family: Work Sans;
-                            font-size: 18px;
                             background: #2b2e8c;
                             border-radius: 8px;
                             border: solid #2b2e8c;
@@ -164,6 +187,7 @@ main>.section {
 
                                 .flexicap-list-9 {
                                     padding-left: 10px;
+                                    cursor: pointer;
 
                                     p {
                                         display: flex;
@@ -180,7 +204,7 @@ main>.section {
                                             background-position: 90% 70%;
                                             background-size: 35px;
                                             background-color: transparent;
-                                            font-family: roboto-medium;
+                                            font-family: 'roboto-medium';
                                             font-size: 14px;
                                             font-weight: 500;
                                             border: none;
@@ -234,7 +258,6 @@ main>.section {
 
                             >p {
                                 display: flex;
-                                color: #2B2E8C;
                                 padding: 0.25rem 1rem;
                                 line-height: 1.25rem;
                                 font-size: 14px;
@@ -242,6 +265,12 @@ main>.section {
                                 border-radius: .5rem;
                                 gap: .5rem;
                                 align-items: center;
+                                color: #3c434f;
+                                font-family: 'roboto-regular';
+                                font-size: 14px;
+                                font-weight: 400;
+                                line-height: 16px;
+                                cursor: pointer;
 
                                 &::after {
                                     content: "";
@@ -250,8 +279,8 @@ main>.section {
                                     background-position: center;
                                     background-size: 100%;
                                     display: flex;
-                                    width: 15px;
-                                    height: 15px;
+                                    width: 13px;
+                                    height: 13px;
                                     justify-content: center;
                                     align-items: center;
                                     flex-shrink: 0;
@@ -268,10 +297,47 @@ main>.section {
                                 border-radius: .5rem;
                                 gap: .5rem;
                                 align-items: center;
+                                position: relative;
+                                cursor: pointer;
 
                                 .flexicap-fund-ul-6 {
+                                    width: 45px;
+                                    position: absolute;
+                                    top: 0;
+                                    right: 0;
+                                    background: #887d7d;
+                                    border-radius: 4px 4px 0 0;
+                                    border: 1px solid #1d294e;
+                                    background: #1d294e;
+                                    padding: 2px;
+                                    opacity: 0;
+                                    visibility: hidden;
+                                    transition: opacity 0.2s ease, visibility 0.2s ease;
+                                    z-index: 2;
                                     display: none;
+
+                                    li {
+                                        padding: 3px;
+                                        border-bottom: 1px dashed hsla(0, 0%, 100%, .3);
+
+                                        img {
+                                            width: auto;
+                                            height: auto;
+                                        }
+                                    }
                                 }
+
+                            }
+
+                            .flexicap-fund-ul-5:hover .flexicap-fund-ul-6 {
+                                display: block;
+                                opacity: 1;
+                                visibility: visible;
+                                display: flex;
+                                flex-direction: column;
+                                text-align: center;
+                                justify-content: flex-start;
+                                text-align: left;
                             }
                         }
                     }
