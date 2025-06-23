@@ -7,12 +7,17 @@ main > .section ul {
 main > .section.banner-flexicap-container {
   display: flex;
   flex-direction: column;
+}
+main > .section .banner-flexicap-wrapper {
   background-image: url(/icons/flexicap-fund-desk.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50%;
+  max-width: inherit;
+  padding: 0;
+  margin: 0;
 }
-main > .section .banner-flexicap-wrapper {
+main > .section .banner-flexicap-wrapper .banner-flexicap {
   max-width: 1172px;
   width: 100%;
   margin: 0 auto;
@@ -227,7 +232,7 @@ main > .section .banner-flexicap-wrapper .banner-flexicap .flexicap-fund.sec-2 .
   justify-content: flex-end;
   gap: 15px;
 }
-main > .section .banner-flexicap-wrapper .banner-flexicap .flexicap-fund.sec-2 .flexicap-fund-column .contact-links > .button-container {
+main > .section .banner-flexicap-wrapper .banner-flexicap .flexicap-fund.sec-2 .flexicap-fund-column .contact-links > p {
   display: flex;
   padding: 0.25rem 1rem;
   line-height: 1.25rem;
@@ -242,7 +247,7 @@ main > .section .banner-flexicap-wrapper .banner-flexicap .flexicap-fund.sec-2 .
   line-height: 16px;
   cursor: pointer;
 }
-main > .section .banner-flexicap-wrapper .banner-flexicap .flexicap-fund.sec-2 .flexicap-fund-column .contact-links > .button-container::after {
+main > .section .banner-flexicap-wrapper .banner-flexicap .flexicap-fund.sec-2 .flexicap-fund-column .contact-links > p::after {
   content: "";
   background-image: url(/icons/arrow-right-black.svg);
   background-repeat: no-repeat;
@@ -255,7 +260,7 @@ main > .section .banner-flexicap-wrapper .banner-flexicap .flexicap-fund.sec-2 .
   align-items: center;
   flex-shrink: 0;
 }
-main > .section .banner-flexicap-wrapper .banner-flexicap .flexicap-fund.sec-2 .flexicap-fund-column .contact-links > .button-container .button {
+main > .section .banner-flexicap-wrapper .banner-flexicap .flexicap-fund.sec-2 .flexicap-fund-column .contact-links > p .button {
   margin: 0;
   padding: 0;
   color: #3c434f;
@@ -312,4 +317,129 @@ main > .section .banner-flexicap-wrapper .banner-flexicap .flexicap-fund.sec-2 .
   text-align: center;
   justify-content: flex-start;
   text-align: left;
+}
+main > .section .flexicap-form-wrapper {
+  display: none;
+}
+main > .section .flexicap-form-wrapper {
+  position: fixed;
+  width: 100%;
+  max-width: inherit;
+  z-index: 100;
+  margin: 0;
+  padding: 0;
+  inset: 0px;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+}
+main > .section .flexicap-form-wrapper .flexicap-form {
+  max-width: 816px;
+  width: 100%;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  background-color: #fff;
+  padding: 10px;
+}
+main > .section .flexicap-form-wrapper .flexicap-form .form-container {
+  display: flex;
+  border-radius: 10px;
+  padding: 16px;
+  background: transparent linear-gradient(180deg, #364881, #45357d 51%, #5d1c79) 0 0 no-repeat padding-box;
+}
+main > .section .flexicap-form-wrapper .flexicap-form .form-container .form-section-top {
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  flex: 1;
+}
+main > .section .flexicap-form-wrapper .flexicap-form .form-container .form-section-top .form-item-1 p {
+  font-family: "roboto-bold";
+  font-size: 37px;
+  font-weight: 700;
+  font: normal normal 700 28px/37px roboto-bold;
+  padding-bottom: 20px;
+  margin: 0;
+}
+main > .section .flexicap-form-wrapper .flexicap-form .form-container .form-section-top .form-item-2 img {
+  width: 100%;
+  height: 100%;
+}
+main > .section .flexicap-form-wrapper .flexicap-form .form-container .form-section-bottom {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  width: 350px;
+}
+main > .section .flexicap-form-wrapper .flexicap-form .form-container .form-section-bottom .form-item-3 p {
+  padding-bottom: 20px;
+  font-family: "roboto-bold";
+  font-size: 26px;
+  font-weight: 700;
+  color: #311e69;
+}
+main > .section .flexicap-form-wrapper .flexicap-form .form-container .form-section-bottom .form-sec .form-pl .user-form {
+  display: flex;
+  flex-direction: column;
+}
+main > .section .flexicap-form-wrapper .flexicap-form .form-container .form-section-bottom .form-sec .form-pl .user-form .customInput {
+  padding-bottom: 25px;
+  display: flex;
+}
+main > .section .flexicap-form-wrapper .flexicap-form .form-container .form-section-bottom .form-sec .form-pl .user-form .customInput input {
+  padding: 16px 14px;
+  font-size: 15px;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  width: 100%;
+  border: 1px solid #dfe1e6;
+  border-radius: 5px;
+  color: #6a738a;
+  flex: 1 0 0;
+}
+main > .section .flexicap-form-wrapper .flexicap-form .form-container .form-section-bottom .form-sec .form-pl .user-form .form-submit {
+  width: 100%;
+  height: 44px;
+  background: #2b2e8c 0 0 no-repeat padding-box;
+  border-radius: 3px;
+  font: normal normal 700 16px/21px Roboto;
+  color: #fff;
+  margin: 0 auto 15px;
+  cursor: pointer;
+  font-family: "roboto-bold";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 21px;
+}
+main > .section .flexicap-form-wrapper .flexicap-form .form-container .form-section-bottom .form-item-4 {
+  padding: 15px 8px 0;
+}
+main > .section .flexicap-form-wrapper .flexicap-form .form-container .form-section-bottom .form-item-4 p {
+  font-family: "roboto-regular";
+  font-size: 13px;
+  font-weight: 400;
+  color: #bbbdc4;
+  line-height: normal;
+}
+main > .section .flexicap-form-wrapper .flexicap-form .close {
+  position: absolute;
+  right: -15px;
+  top: -15px;
+  background-color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 19px;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }/*# sourceMappingURL=banner-flexicap.css.map */

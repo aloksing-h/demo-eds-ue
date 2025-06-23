@@ -16879,4 +16879,5 @@ export default function decorate(block) {
         const card = createFundCard(data);
         block.appendChild(card);
     });
+    
 }

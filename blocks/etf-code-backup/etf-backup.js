@@ -232,3 +232,27 @@ export default function decorate(block) {
 //         }
 //     }
 // }
+
+
+
+
+const formTop = document.querySelector(".flexicap-form .form-section-top");
+
+if (formTop) {
+    const wrapper = document.createElement("div");
+    wrapper.classList.add("form-secwrp");
+    formTop.parentNode.insertBefore(wrapper, formTop);
+    wrapper.appendChild(formTop);
+}
+
+
+
+
+const formWrp = document.querySelector(".flexicap-form");
+
+if (formWrp) {
+    const wrapper = document.createElement("div");
+    wrapper.classList.add("form-secwrp");
+    formWrp.parentNode.insertBefore(wrapper, formWrp);
+    wrapper.appendChild(formWrp);
+}
