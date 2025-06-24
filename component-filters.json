@@ -27,7 +27,8 @@
       "etf-net-asset-value",
       "hero-carousel",
       "banner-flexicap",
-      "flexicap-form"
+      "flexicap-form",
+      "footer"
     ]
   },
   {
@@ -53,5 +54,9 @@
   {
     "id": "hero-carousel",
     "components": ["hero-carousel-item"]
+  },
+  {
+    "id": "footer",
+    "components": ["footer-item"]
   }
 ]
