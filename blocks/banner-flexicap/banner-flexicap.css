@@ -1,3 +1,4 @@
+@import '../../styles/fonts.css';
 main > .section {
   margin: 0;
 }
@@ -30,11 +31,10 @@ main > .section .banner-flexicap-wrapper .banner-flexicap .flexicap-fund.sec-1 >
   width: 100%;
 }
 main > .section .banner-flexicap-wrapper .banner-flexicap .flexicap-fund.sec-1 > div h3 {
-  color: #2B2E8C;
-  font-family: "Butler-SemiBold";
-  font-weight: 600;
-  font-size: 56px;
-  line-height: 75px;
+  font-size: 3.5rem;
+  line-height: 4.75rem;
+  color: #4e78e6;
+  font-family: "Butler", sans-serif;
 }
 main > .section .banner-flexicap-wrapper .banner-flexicap .flexicap-fund.sec-1 > div h1 {
   color: #2B2E8C;

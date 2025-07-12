@@ -1,3 +1,7 @@
+@import '../../styles/common-theme/css/_fluid-typography.scss';
+@import '../../styles/common-theme/css/_variables_mixins.scss';
+@import '../../styles/fonts.css';
+
 main>.section {
     margin: 0;
 
@@ -39,11 +43,13 @@ main>.section {
                         width: 100%;
 
                         h3 {
-                            color: #2B2E8C;
-                            font-family: 'Butler-SemiBold';
-                            font-weight: 600;
-                            font-size: 56px;
-                            line-height: 75px;
+                            // color: #2B2E8C;
+                            // color: $blue-100;
+                            // font-family: $butler;
+                            // font-weight: map-get($font-weights, Bold);
+                            // font-size: rem(56px);
+                            // line-height: rem(76px);
+                            @include fonts(rem(56px), rem(76px) ,$blue-100, $butler);
                         }
 
                         h1 {

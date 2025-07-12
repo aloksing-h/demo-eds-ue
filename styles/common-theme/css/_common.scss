@@ -76,7 +76,7 @@
 // font
 
 .font-primary :is(p, h1, h2, h3, h4, h5, h6) {
-  font-family: $switzer !important;
+  font-family: $Butler !important;
   font-style: normal !important;
 }
 
@@ -108,99 +108,6 @@
   -ms-animation: fadeIn 2s;
 }
 
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-@-moz-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-@-o-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-@-ms-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes slide-in {
-  from {
-    translate: 150vw 0;
-    scale: 200% 1;
-  }
-
-  to {
-    translate: 0 0;
-    scale: 100% 1;
-  }
-}
-
-@keyframes slide-out {
-  from {
-    translate: 0 0;
-    scale: 100% 1;
-  }
-
-  to {
-    translate: 150vw 0;
-    scale: 200% 1;
-  }
-}
-
-@keyframes slide-in-bottom-to-top {
-  from {
-    transform: translateY(150vh) scale(1, 2);
-  }
-
-  to {
-    transform: translateY(0) scale(1, 1);
-  }
-}
-
-@keyframes slide-out-top-to-bottom {
-  from {
-    transform: translateY(0) scale(1, 1);
-  }
-
-  to {
-    transform: translateY(150vh) scale(1, 2);
-  }
-}
 
 body.loading {
   overflow: hidden;

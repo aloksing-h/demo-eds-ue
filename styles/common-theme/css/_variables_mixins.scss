@@ -1,3 +1,5 @@
+// @import url(../../../styles/common-theme/css/_reset.scss);
+
 // Primary colors
 $primary-black: #000000;
 $primary-white: #ffffff;
@@ -97,8 +99,9 @@ $dark-500: #7b7b7b;
 $Light-600: #9d9d9d;
 
 // Fonts
-$playFairDisplayItalic: "playFairDisplayItalic", sans-serif;
-$switzer: "switzer", sans-serif;
+// $playFairDisplayItalic: "playFairDisplayItalic", sans-serif;
+
+$butler: "Butler", sans-serif;
 
 // Border Radius
 $r12: 12px;
@@ -124,12 +127,15 @@ $font-weights: (
   "heavy": 900,
 );
 
-@mixin fonts($size, $line-height, $color, $family: "sans-serif", $weight) {
+@mixin fonts($size, $line-height, $color, $family: "Butler", $weight: null) {
   font-size: $size;
   line-height: $line-height;
   color: $color;
   font-family: $family;
-  font-weight: $weight;
+
+  @if $weight != null {
+    font-weight: $weight;
+  }
 }
 
 @mixin flex-normal($align-item: center, $justify-content: center) {

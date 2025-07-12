@@ -1,3 +1,7 @@
+/* @import './common-theme/css/common';
+@import './common-theme/css/fluid-typography';
+@import './common-theme/css/reset';
+@import './common-theme/css/variables_mixins'; */
 /*
  * Copyright 2020 Adobe. All rights reserved.
  * This file is licensed to you under the Apache License, Version 2.0 (the "License");
@@ -20,10 +24,8 @@
   --link-hover-color: #1d3ecf;
 
   /* fonts */
-  --body-font-family: roboto, roboto-fallback, sans-serif;
-  --heading-font-family: roboto-condensed, roboto-condensed-fallback, sans-serif;
-  --body-font-family: Manrope, Manrope-fallback, sans-serif;
-  --heading-font-family: Manrope-Bold, Manrope-Bold-fallback, sans-serif;
+  --body-font-family: Butler, Butler-fallback, sans-serif;
+  --heading-font-family: Butler, Butler, sans-serif;
 
   /* body sizes */
   --body-font-size-m: 22px;
@@ -44,25 +46,25 @@
 
 /* fallback fonts */
 @font-face {
-  font-family: roboto-condensed-fallback;
+  font-family: Butler-condensed-fallback;
   size-adjust: 88.82%;
   src: local('Arial');
 }
 
 @font-face {
-  font-family: roboto-fallback;
+  font-family: Butler-fallback;
   size-adjust: 99.529%;
   src: local('Arial');
 }
 
 @font-face {
-  font-family: Manrope-Bold-fallback;
+  font-family: Butler-Bold-fallback;
   size-adjust: 88.82%;
   src: local('Arial');
 }
 
 @font-face {
-  font-family: Manrope-fallback;
+  font-family: Butler-fallback;
   size-adjust: 99.529%;
   src: local('Arial');
 }
@@ -83,6 +85,7 @@
     --heading-font-size-xs: 18px;
   }
 }
+
 
 body {
   display: none;
@@ -463,7 +466,7 @@ main>.section.tab-section {
 .why-exchange-traded .default-content-wrapper ul li a {
   font-size: 13px;
   color: #21295a;
-  font-family: Roboto;
+  font-family: Butler;
   font-weight: 500;
   margin: 7px 0 0;
   display: flex;
