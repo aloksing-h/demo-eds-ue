@@ -1,3 +1,4 @@
+@import "../../../styles/fonts.css";
 @import '../../styles/fonts.css';
 main > .section {
   margin: 0;
@@ -33,7 +34,7 @@ main > .section .banner-flexicap-wrapper .banner-flexicap .flexicap-fund.sec-1 >
 main > .section .banner-flexicap-wrapper .banner-flexicap .flexicap-fund.sec-1 > div h3 {
   font-size: 3.5rem;
   line-height: 4.75rem;
-  color: #4e78e6;
+  color: #2E2A94;
   font-family: "Butler", sans-serif;
 }
 main > .section .banner-flexicap-wrapper .banner-flexicap .flexicap-fund.sec-1 > div h1 {
