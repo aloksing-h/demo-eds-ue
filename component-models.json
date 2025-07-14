@@ -448,58 +448,6 @@
     ]
   },
   {
-    "id": "header-sub",
-    "fields": [
-      {
-        "component": "multiselect",
-        "name": "classes",
-        "label": "Style",
-        "valueType": "string",
-        "options": [
-          {
-            "name": "Set Sub Header Class Name",
-            "children": [
-              {
-                "name": "Invest",
-                "value": "invest"
-              },
-              {
-                "name": "Plans",
-                "value": "plans"
-              },
-              {
-                "name": "Education",
-                "value": "education"
-              },
-              {
-                "name": "The motilal oswal edge",
-                "value": "The motilal oswal edge"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "component": "reference",
-        "name": "image",
-        "label": "Image",
-        "multi": false
-      },
-      {
-        "component": "text",
-        "name": "imageAlt",
-        "label": "Alt Text"
-      },
-      {
-        "component": "richtext",
-        "name": "text",
-        "value": "",
-        "label": "Set Sub Header Structure",
-        "valueType": "string"
-      }
-    ]
-  },
-  {
     "id": "etf-funds",
     "fields": [
       {
