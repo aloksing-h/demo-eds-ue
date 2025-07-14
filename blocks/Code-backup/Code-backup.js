@@ -334,3 +334,55 @@ export default function decorate(block) {
 // }
 
 
+// {
+//     "title": "Flexicap form",
+//         "id": "flexicap-form",
+//             "plugins": {
+//         "xwalk": {
+//             "page": {
+//                 "resourceType": "core/franklin/components/block/v1/block",
+//                     "template": {
+//                     "name": "Flexicap form",
+//                         "model": "flexicap-form"
+//                 }
+//             }
+//         }
+//     }
+// }
+
+
+// {
+//     "id": "flexicap-form",
+//         "fields": [
+//             {
+//                 "component": "text",
+//                 "valueType": "string",
+//                 "name": "th-heading",
+//                 "label": "Title"
+//             },
+//             {
+//                 "component": "reference",
+//                 "name": "image",
+//                 "label": "Image",
+//                 "multi": false
+//             },
+//             {
+//                 "component": "text",
+//                 "name": "imageAlt",
+//                 "label": "Alt Text"
+//             },
+//             {
+//                 "component": "text",
+//                 "valueType": "string",
+//                 "name": "from-title",
+//                 "label": "Description"
+//             },
+//             {
+//                 "component": "richtext",
+//                 "name": "text",
+//                 "value": "",
+//                 "label": "Flexicap modal",
+//                 "valueType": "string"
+//             }
+//         ]
+// }
