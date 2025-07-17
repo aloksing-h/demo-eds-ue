@@ -87,7 +87,7 @@
 
 /* Butler font-face start */
 @font-face {
-  font-family: Butler;
+  font-family: butler;
   font-style: normal;
   font-weight: 800;
   font-display: swap;
@@ -96,7 +96,7 @@
 }
 
 @font-face {
-  font-family: Butler;
+  font-family: 'Butler-bold';
   font-style: normal;
   font-weight: 700;
   font-display: swap;

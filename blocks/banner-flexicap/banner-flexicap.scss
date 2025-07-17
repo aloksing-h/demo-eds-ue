@@ -49,12 +49,14 @@ main>.section {
                             // font-weight: map-get($font-weights, Bold);
                             // font-size: rem(56px);
                             // line-height: rem(76px);
-                            @include fonts(rem(56px), rem(76px) ,$primary-blue, $butler);
+                            @include fonts(rem(56px), rem(76px), $primary-blue, $butler,700);
                         }
 
                         h1 {
                             color: #2B2E8C;
+                            font-family: butler-Bold;
                             font-size: 28px;
+                            font-weight: 400;
                             line-height: 36px;
                             text-transform: capitalize;
                         }
